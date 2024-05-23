@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Which programming languages or frameworks should I be using to solve the %type%?",
+    "answer": "The administrator/ employer organization of  the %type% has enabled a set of languages or frameworks that needs to be used to solve this  particular %type%. Please see the list in the drop down and choose the one that you would like to use."
+  },
+  {
+    "question": "I am not able to see question and images? What should i do?",
+    "answer": "The above issue could occur due to slow or  missing internet connection. You can refresh your browser window by pressing (Ctrl/Cmd + Shift + R). If the issue is not resolved after refreshing, please contact <a href='mailto:support@doselect.com'>support@doselect.com</a>"
+  },
+  {
+    "question": "My screen is freezed and i am not able to navigate between the problems? What should i do?",
+    "answer": "This can primarily occur due to slow internet connection. You can resolve this by refreshing your screen by pressing (Ctrl/Cmd + Shift + R)."
+  },
+  {
+    "question": "What happens to my %type% if i lose the internet connectivity while taking a %type%?",
+    "answer": "Your %type% environment would not be available without an active connection. You need to wait for the internet to resume the %type%. Please refresh your screen by pressing (Ctrl/Cmd + Shift + R). Your existing solution before losing the connection will be saved. The %type%'s timer would keep running."
+  },
+  {
+    "question": "I'm getting “Webcam.js (or) Waiting for webcam” error or “AGREE AND CONTINUE” button is disabled. What should I do?",
+    "answer": "There are three possible cases here:<ul><li>Your browser has denied the permission to access the webcam. You need to allow the browser to access your webcam to continue with the %type%.</li> <li>Webcam not found on your system. Please make sure that the webcam is working fine on your system. </li> <li>Your webcam's resolution is less than or equal to 0.3 MP. Minimum supported webcam resolution is 640 * 480.</li></ul>"
+  },
+  {
+    "question": "I'm getting “System time” error or 'AGREE AND CONTINUE' button is disabled. What should I do?",
+    "answer": "Clock Error: Check that your system clock is set to the current date-time and refresh the page before you try again"
+  }
+]

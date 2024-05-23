@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "questionsDesc": "Coding",
+      "questionsDescStatus": true,
+      "assessmentCompleted": true,
+      "questionsArray": [
+        {
+          "SlNo": 1,
+          "ProblemName": "Stack Using Interface",
+          "ProblemCategory": "Coding",
+          "Status": "UNSOLVED"
+        },
+        {
+          "SlNo": 2,
+          "ProblemName": "Stack Using Interface",
+          "ProblemCategory": "Coding",
+          "Status": "SOLVING"
+        },
+        {
+          "SlNo": 3,
+          "ProblemName": "Stack Using Interface",
+          "ProblemCategory": "Coding",
+          "Status": "SOLVED"
+        },
+        {
+          "SlNo": 4,
+          "ProblemName": "Stack Using Interface",
+          "ProblemCategory": "Coding",
+          "Status": "REJECTED"
+        }
+      ]
+    },
+    {
+      "questionsDesc": "Multiple Choice Questions",
+      "questionsDescStatus": false,
+      "assessmentCompleted": false,
+      "questionsArray": [
+        {
+          "SlNo": 5,
+          "ProblemName": "Exception-al Output!",
+          "ProblemCategory": "MCQ",
+          "Status": "UNSOLVED"
+        },
+        {
+          "SlNo": 6,
+          "ProblemName": "Parent and Child",
+          "ProblemCategory": "MCQ",
+          "Status": "UNSOLVED"
+        },
+        {
+          "SlNo": 7,
+          "ProblemName": "Predict the Output",
+          "ProblemCategory": "MCQ",
+          "Status": "SOLVED"
+        },
+        {
+          "SlNo": 8,
+          "ProblemName": "Stack Using Interface",
+          "ProblemCategory": "MCQ",
+          "Status": "REJECTED"
+        },
+        {
+          "SlNo": 9,
+          "ProblemName": "Design Pattern",
+          "ProblemCategory": "MCQ",
+          "Status": "REJECTED"
+        },
+        {
+          "SlNo": 10,
+          "ProblemName": "Correct Pattern",
+          "ProblemCategory": "MCQ",
+          "Status": "SOLVED"
+        },
+        {
+          "SlNo": 11,
+          "ProblemName": "Design Pattern",
+          "ProblemCategory": "MCQ",
+          "Status": "SOLVING"
+        }
+      ]
+    }
+  ]
+}

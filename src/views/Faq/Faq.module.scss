@@ -1,0 +1,272 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.container {
+  background: linear-gradient(180deg, $white-color 0%, $light-white 100%);
+  padding: 20px 98px;
+  @include respond(max_mid) {
+    padding: 20px 70px;
+  }
+  @include respond(medium) {
+    padding: 20px 30px;
+  }
+
+  .innerContainer {
+    max-width: 1230px;
+    position: absolute;
+    background: $white-color;
+    box-shadow: 0px 4px 12px $Faq-box-shadow;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px;
+    top: -210px;
+    left: 0;
+    // @include respond(max_mid) {
+    //   margin-top: 100px;
+    // }
+
+    .InfoSearch {
+      .InfoBox {
+        @include fontSize(6);
+        display: flex;
+        font-style: normal;
+        font-weight: normal;
+        padding: 12px 15px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        background: $light-green;
+        border: 1px solid $app-color;
+        box-sizing: border-box;
+        border-radius: 5px;
+        display: flex;
+        column-gap: 16px;
+        span {
+          padding-top: 8px;
+        }
+        .text {
+          @include fontSize(5px);
+          @include fontWeight(0);
+          margin: 0;
+        }
+        img {
+          max-width: 100%;
+          min-width: 27px;
+          height: auto;
+        }
+      }
+
+      .searchContainer {
+        margin: auto;
+        height: 119px;
+        .searchBox {
+          text-align: center;
+          background-color: $light-grey;
+          border: 1px solid $faq-search-box-border;
+          box-sizing: border-box;
+          border-radius: 5px;
+          img {
+            position: relative;
+            left: 30px;
+            top: -2px;
+          }
+          input {
+            width: 70%;
+            height: 44px;
+            background: $white-color;
+            margin: 40px auto;
+            padding: 0 35px;
+            border: 1px solid $input-border;
+            box-sizing: border-box;
+            box-shadow: 0px 0.9px 0px $Faq-box-input-shadow;
+            border-radius: 10px;
+            @include respond(medium) {
+              width: 85%;
+              margin-right: 10px;
+            }
+            @include respond(small) {
+              width: 85%;
+              margin-right: 15px;
+            }
+          }
+          :focus-visible {
+            outline: none;
+          }
+        }
+      }
+    }
+    .tabContainer :global {
+      margin-top: 30px;
+      .ant-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: $black-color;
+      }
+      .ant-table {
+        color: $black-color;
+      }
+      .ant-table .ant-table-header .ant-table-thead tr th {
+        background-color: $faq-table-header;
+        font-weight: bold;
+        font-family: $font-family;
+        padding: 2px 16px;
+        border: 1px solid $table-header-border;
+        @include respond(medium) {
+          padding: 6px 20px;
+        }
+        @include respond(small) {
+          padding: 8px 10px;
+          @include fontSize(4);
+        }
+      }
+      .ant-table-thead tr th {
+        background-color: $faq-table-header;
+        font-weight: bold;
+        font-family: $font-family;
+        @include fontSize(6);
+        padding: 12px 16px;
+        color: $white-color;
+        border: 1px solid $table-header-border;
+        @include respond(medium) {
+          padding: 6px 20px;
+        }
+        @include respond(small) {
+          padding: 8px 10px;
+          @include fontSize(4);
+        }
+      }
+      .ant-table .ant-table-header tr th:nth-child(4) {
+        text-align: center;
+      }
+      .ant-table-tbody > tr > td {
+        border: 1px solid $table-header-border !important;
+        @include respond(medium) {
+          padding: 15px 15px;
+        }
+        @include respond(small) {
+          padding: 8px 10px;
+        }
+      }
+      .ant-table-container > .ant-table-body > table > tbody > tr > td {
+        border: 1px solid $table-header-border;
+        @include respond(medium) {
+          padding: 15px 10px;
+        }
+        @include respond(small) {
+          padding: 8px 10px;
+        }
+      }
+      .ant-table-row td:nth-child(3) {
+        text-align: center;
+      }
+      .ant-table-row td:nth-child(4) {
+        text-align: center;
+      }
+      .ant-table .ant-table-header .ant-table-thead .ant-table-cell-scrollbar {
+        background-color: $white-color;
+      }
+      .ant-collapse
+        > .ant-collapse-item
+        > .ant-collapse-header
+        .ant-collapse-arrow {
+        color: $grey-color;
+      }
+      .ant-collapse
+        > .ant-collapse-item
+        > .ant-collapse-header
+        .ant-collapse-arrow
+        svg {
+        width: 18px;
+        height: 18px;
+        transform: rotate(90deg);
+      }
+      .ant-collapse
+        > .ant-collapse-item-active
+        > .ant-collapse-header
+        .ant-collapse-arrow
+        svg {
+        transform: rotate(268deg) !important;
+      }
+      .ant-tabs-ink-bar {
+        background: $app-dark-color;
+        height: 4px;
+      }
+      .ul-style li::before {
+        content: "\2022";
+        color: $app-dark-color;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      .ant-tabs > .ant-tabs-nav .ant-tabs-nav-list .ant-tabs-tab {
+        @include fontSize(6);
+        margin: 0 60px;
+        font-weight: $font-weight-bold;
+
+        @include respond(large) {
+          text-align: center;
+        }
+        @include respond(medium) {
+          align-items: flex-start;
+          margin: 10px 20px;
+          align-items: center;
+          white-space: normal;
+          @include fontSize(5);
+        }
+        @include respond(small) {
+          @include fontSize(5);
+          white-space: wrap;
+          margin: 5px 22px;
+          align-items: center;
+        }
+      }
+      .loadBtn {
+        padding: 22px;
+        text-align: center;
+        button {
+          color: $white-color;
+          @include fontWeight(200);
+          width: 174px;
+          height: 40px;
+          background: $button;
+          border-radius: 25px;
+          &:hover {
+            outline: none;
+            border: none;
+          }
+        }
+      }
+      .iconsStatus {
+        display: flex;
+        align-items: center;
+        svg {
+          @include fontSize(10);
+          margin-right: 20px;
+        }
+      }
+    }
+    @include respond(medium) {
+      padding: 20px;
+      .InfoSearch {
+        .text {
+          @include fontSize(3px);
+        }
+      }
+    }
+    @include respond(small) {
+      background: none;
+      box-shadow: none;
+      width: 100%;
+      margin-top: 0px;
+      padding: 0px;
+    }
+  }
+}
+.subcontainer {
+  max-width: 100%;
+  width: 100%;
+  height: 227px;
+  position: relative;
+  border-bottom: 1px solid $support-border-color;
+  background: linear-gradient(180deg, $white-color 0%, $light-white 100%);
+}

@@ -1,0 +1,7 @@
+@import "./color.module.scss";
+@import "./font.module.scss";
+
+.btn-white {
+  background-color: $white-color;
+  border: 1px solid $primary-color;
+}

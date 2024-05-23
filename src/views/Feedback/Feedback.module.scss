@@ -1,0 +1,362 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.container {
+  font-family: $font-family;
+  width: 87%;
+  max-width: 1600px;
+  margin: 25px auto 59px auto;
+  padding: 33px 75px;
+  background: linear-gradient(
+    180deg,
+    $light-white 0%,
+    rgba(255, 255, 255, 0.97) 40%
+  );
+  border: 1px solid $border;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px $Faq-box-shadow;
+  border-radius: 10px;
+
+  @include respond(medium) {
+    padding: 20px;
+    margin: 20px auto;
+  }
+  @include respond(small) {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 0;
+  }
+  .divider :global {
+    border-top-color: $feedback-dividor-clr;
+    // margin: 16px 0 0 0;
+
+    .ant-divider-inner-text {
+      color: $normal-btn-txt-clr;
+    }
+  }
+
+  form :global {
+    .ant-row {
+      justify-content: flex-end;
+      margin-bottom: 0px;
+      @include respond(medium) {
+        justify-content: center;
+      }
+    }
+  }
+
+  .section1 :global {
+    text-align: center;
+    // margin-bottom: 20px;
+    border-bottom: 2px solid $feedback-section-border-clr;
+    .ant-row {
+      column-gap: 20px;
+      @include respond(small) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .ant-col {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @include respond(medium) {
+          align-items: center;
+        }
+
+        img {
+          max-width: 100%;
+          width: 190px;
+          object-fit: contain;
+          // height: 500px;
+          // max-width: 500px;
+          @include respond(medium) {
+            max-width: 100%;
+          }
+          @include respond(small) {
+            max-width: 100%;
+            // height: 300px;
+          }
+        }
+
+        h2 {
+          @include fontSize(18);
+          // text-align: center;
+          color: $dark-blue;
+          font-weight: $font-weight-bold;
+          // text-align: justify;
+          margin: 0 auto 18px 0;
+          @include respond(max_mid) {
+            line-height: normal;
+          }
+          @include respond(medium) {
+            @include fontSize(12);
+            line-height: normal;
+            margin: 0 auto 18px auto;
+          }
+
+          @include respond(small) {
+            @include fontSize(10);
+            text-align: center;
+            padding: 0 50px;
+          }
+        }
+
+        .ant-typography {
+          font-style: normal;
+          @include fontSize(6);
+          // margin: 18px 0;
+          text-align: justify;
+          max-width: 563px;
+          line-height: 24px;
+          // margin: auto;
+          color: $black-color;
+          @include fontWeight(0);
+          @include respond(medium) {
+            width: 90%;
+            text-align: center;
+            @include fontSize(5);
+          }
+          @include respond(small) {
+            @include fontSize(3);
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .section2 :global {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include respond(Xlarge) {
+      .ant-col-md-11 {
+        display: block;
+        flex: 0 0 50%;
+        max-width: 49%;
+      }
+    }
+    @include respond(large) {
+      .ant-col-md-11 {
+        display: block;
+        flex: 0 0 50%;
+        max-width: 49%;
+      }
+    }
+    @include respond(medium) {
+      display: block;
+      .ant-col-md-11 {
+        display: block;
+        flex: 0 0 45.83333333%;
+        max-width: 45.83333333%;
+      }
+    }
+  }
+  // .colgap {
+  //   width: 90%;
+  // }
+  .section2 .colgap .contentBox :global {
+    margin: 20px 0;
+    // width: 400px;
+    max-width: 500px;
+    height: 127px;
+    padding: 10px 12px;
+    background: $white-color;
+    border: 1.5px solid $dark-border;
+    box-sizing: border-box;
+    border-radius: 5px;
+    @include respond(Xlarge) {
+      max-width: 600px;
+    }
+    @include respond(medium) {
+      min-width: 370px;
+      width: 100%;
+    }
+    @include respond(small) {
+      min-width: 350px;
+      width: 100%;
+    }
+    ul {
+      li {
+        margin: 0 20px;
+        @include respond(max_mid) {
+          margin: 0 13px;
+        }
+        @include respond(small) {
+          margin: 0 13px;
+        }
+      }
+      li:first-child {
+        margin-left: 5px;
+      }
+    }
+    @include respond(small) {
+      margin: 20px 10px;
+      padding: 10px 21px;
+    }
+  }
+  .stars :global {
+    width: 285px;
+    @include respond(small) {
+      width: 245px;
+    }
+
+    .ant-rate-star-full .anticon svg {
+      color: $feedback-start-clr;
+    }
+    .ant-row {
+      margin-top: 4px;
+      color: $dark-grey;
+      justify-content: space-between;
+    }
+    .ant-row .ant-col:nth-child(2) {
+      display: block;
+      text-align: end;
+      @include respond(max_mid) {
+        display: block;
+        text-align: start;
+      }
+    }
+    .ant-typography {
+      color: $active-navtext-color;
+      @include respond(small) {
+        @include fontSize(3);
+      }
+    }
+
+    .ant-form-item {
+      margin-bottom: 0;
+      textarea.ant-input {
+        height: 130px;
+      }
+    }
+  }
+
+  textarea:focus {
+    border: 1px solid $dark-border;
+    box-shadow: none;
+  }
+  .textBox :global {
+    // .ant-input {
+    //   border: 1px solid #bdbdc6;
+    //   border-radius: 5px;
+    // }
+    .ant-input:hover {
+      // border: 0.5px solid $dark-border;
+      border-color: $dark-border;
+    }
+  }
+  .textBox {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 25px;
+    // width: 49%;
+    // max-width: 493px;
+    .textboxInput {
+      border: 0.5px solid $dark-border;
+      border-radius: 5px;
+      height: 127px;
+      @include respond(small) {
+        margin: 0 10px;
+      }
+    }
+    @include respond(medium) {
+      min-width: 370px;
+      width: 100%;
+    }
+
+    h6 {
+      display: block;
+      text-align: justify;
+      @include respond(small) {
+        margin: 0 10px;
+      }
+    }
+    .charParagraph {
+      color: $dark-grey;
+      display: block;
+      text-align: justify;
+      @include fontSize(2);
+    }
+  }
+  h6 {
+    color: $black-color;
+    @include fontSize(6);
+    @include fontWeight(300);
+    font-weight: $font-weight-bold;
+    line-height: 24px;
+    margin: 0 0;
+    @include respond(medium) {
+      @include fontSize(5);
+      margin: 2px 0;
+    }
+    @include respond(max_mid) {
+      @include fontSize(2);
+    }
+    @include respond(small) {
+      @include fontSize(4);
+      margin: 2px 0;
+    }
+  }
+
+  h4 {
+    display: flex;
+    flex-direction: row;
+    max-width: 46%;
+    margin: 15px auto 25px auto;
+    max-width: 500px;
+    color: $normal-btn-txt-clr;
+    // @include fontSize(6px);
+    @include respond(large) {
+      width: 100%;
+    }
+    @include respond(medium) {
+      max-width: 100%;
+      @include fontSize(6);
+    }
+    @include respond(small) {
+      @include fontSize(4);
+    }
+  }
+  h4:before,
+  h4:after {
+    content: "";
+    flex: 1 1;
+    flex-shrink: 1 1;
+    border-bottom: 2px solid $dark-border;
+    margin: auto;
+  }
+  h4:before {
+    margin-right: 10px;
+  }
+  h4:after {
+    margin-left: 10px;
+  }
+  .btn_send {
+    text-align: right;
+    width: 100%;
+    @include respond(medium) {
+      text-align: center;
+    }
+  }
+  button {
+    width: 193px;
+    height: 40px;
+    color: $white-color;
+    margin-top: 10px;
+    background: $button;
+    border-radius: 40px;
+    @include respond(small) {
+      width: 100%;
+    }
+  }
+  button:hover {
+    color: $white-color;
+    background: $button;
+  }
+}

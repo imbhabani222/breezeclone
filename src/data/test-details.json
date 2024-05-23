@@ -1,0 +1,220 @@
+{
+  "access_type": "INV",
+  "allowed_technologies": {},
+  "archived": false,
+  "attendees_length": 1,
+  "category": "PRI",
+  "company": {
+    "avatar_url": "https://doselect-dev.s3.amazonaws.com/companyicons/2.png",
+    "bio": null,
+    "cover_url": null,
+    "email": null,
+    "name": "Hutech Dev",
+    "primary_color": "#2ecc71",
+    "slug": "hutech_dev"
+  },
+  "context_name": "test",
+  "cover_url": null,
+  "created": "2022-02-18T06:30:05.340308",
+  "creator": "/api/v1/user/abhishek_patil_hutech",
+  "custom_scoring": {
+    "de083b36e9e842f697ef1253fa8d3935": {
+      "enabled": false,
+      "penalty": 0,
+      "score": 0
+    },
+    "enabled": false,
+    "f50a8be059c741f78abf3baeb942ce42": {
+      "enabled": false,
+      "penalty": 0,
+      "score": 0
+    }
+  },
+  "cutoff": 40,
+  "duration": 120,
+  "enable_feedback_page": true,
+  "enable_leaderboard": false,
+  "end_time": null,
+  "has_coding_problems": true,
+  "has_jobrole": false,
+  "has_unique_section_slug": true,
+  "id": 28561,
+  "in_learn_feed": false,
+  "instructions": "<ol><li><!--block-->This is an online test.</li><li><!--block-->Please make sure that you are using the latest version of the browser. We recommend using Google Chrome.</li><li><!--block-->It's mandatory to disable all the browser extensions and enabled Add-ons or open the assessment in incognito mode.</li><li><!--block-->If you are solving a coding problem, you will either be required to choose a programming language from the options that have been enabled by the administrator or choose your preferred programming language in case no options have been enabled by the administrator. <strong>Note:</strong> In case you're solving coding problems: All inputs are from STDIN and output to STDOUT.</li><li><!--block-->&nbsp;If test mandates you to use the webcam, please provide the required permissions and access.</li><li><!--block-->To know the results, please contact the administrator.</li><li><!--block-->To refer to the FAQ document, you can click on the HELP button which is present in the top right corner of the test environment.</li></ol><div><!--block-->Best wishes from Hutech Dev!</div>",
+  "intellisense": false,
+  "invite_accepted": true,
+  "invite_id": 1066608,
+  "invite_rejected": false,
+  "invitees_length": 1,
+  "is_activated": true,
+  "is_active": true,
+  "is_expired": false,
+  "is_live": true,
+  "is_locked": false,
+  "is_onboarded": false,
+  "is_timed_section": false,
+  "level": "EAS",
+  "max_invite_reset": 0,
+  "max_score": null,
+  "mode": "TIM",
+  "modified": "2022-02-21T05:40:31.470793",
+  "name": "TimeTES",
+  "owner": "/api/v1/company/hutech_dev",
+  "problem_section_map": {
+    "0wx0x": "de083b36e9e842f697ef1253fa8d3935",
+    "6on3b": "f50a8be059c741f78abf3baeb942ce42",
+    "xe6n9": "f50a8be059c741f78abf3baeb942ce42"
+  },
+  "problems": ["0wx0x", "6on3b", "xe6n9"],
+  "problems_total": 3,
+  "public_access_password": null,
+  "public_access_slug": null,
+  "redirection_url": null,
+  "resource_uri": "/api/v1/test/51w6w",
+  "section_count": 2,
+  "section_history": {
+    "de083b36e9e842f697ef1253fa8d3935": {
+      "name": "Appleeee",
+      "sample": 0
+    }
+  },
+  "sections": [
+    {
+      "custom_scoring": {
+        "enabled": false,
+        "penalty": 0,
+        "score": 0
+      },
+      "description": "",
+      "duration": 0,
+      "is_timed": false,
+      "name": "Section 1",
+      "problems": [
+        {
+          "is_multi_correct": true,
+          "level": "EAS",
+          "name": "Sector",
+          "problem_type": "FIB",
+          "score": 5,
+          "slug": "xe6n9"
+        },
+        {
+          "is_multi_correct": true,
+          "level": "EAS",
+          "name": "Lifestyle",
+          "problem_type": "FIB",
+          "score": 5,
+          "slug": "6on3b"
+        }
+      ],
+      "sample": 2,
+      "shuffle": false,
+      "slug": "f50a8be059c741f78abf3baeb942ce42"
+    },
+    {
+      "custom_scoring": {
+        "enabled": false,
+        "penalty": 0,
+        "score": 0
+      },
+      "description": "",
+      "duration": 0,
+      "is_timed": false,
+      "name": "Appleeee",
+      "problems": [
+        {
+          "is_multi_correct": false,
+          "level": "MED",
+          "name": "Test Coding Copy",
+          "problem_type": "SCR",
+          "score": 100,
+          "slug": "0wx0x"
+        }
+      ],
+      "sample": 1,
+      "shuffle": false,
+      "slug": "de083b36e9e842f697ef1253fa8d3935"
+    }
+  ],
+  "session_state": "ACTIVE",
+  "settings": {
+    "display": {
+      "section_names": true
+    },
+    "fullstack_ide": {
+      "disable_download_workspace": false,
+      "disable_upload_workspace": false
+    },
+    "hacker_extra_data": {
+      "custom_data": {
+        "enabled": false,
+        "fields": []
+      },
+      "profile_data": false
+    },
+    "invites": {
+      "allowed_email_domains": [],
+      "expiry": {
+        "date": "",
+        "days": 365,
+        "enabled": true
+      },
+      "message": ""
+    },
+    "proctor": {
+      "browser_tolerance": {
+        "count": -1,
+        "enabled": false,
+        "warning": false
+      },
+      "compare": {
+        "fingerprint": {
+          "flag": 1,
+          "max": 0
+        },
+        "navigation": {
+          "flag": 3,
+          "max": 10
+        }
+      },
+      "enabled": false,
+      "snapshot": false,
+      "video": {
+        "enabled": false
+      }
+    },
+    "reminders": {
+      "days_after_creation": 3,
+      "days_before_expiry": 1,
+      "enabled": false
+    },
+    "reports": {
+      "admin_emails": [],
+      "answer_section": false,
+      "confirmation": {
+        "enabled": false,
+        "message": ""
+      },
+      "correct_answer": false,
+      "hide_report_summary": false,
+      "send_to_candidate": false
+    },
+    "support": {
+      "email": "google.com",
+      "phone": "3444334"
+    },
+    "treat_as_contest": false
+  },
+  "slug": "51w6w",
+  "stage": null,
+  "start_time": null,
+  "status": "DRA",
+  "tags": [],
+  "technologies": [],
+  "test_end_time": null,
+  "test_start_time": "2022-02-21T05:21:31.643671",
+  "test_type": "GEN",
+  "test_type_verbose": "assessment",
+  "total_test_score": 110,
+  "visibility": []
+}

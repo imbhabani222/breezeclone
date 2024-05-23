@@ -1,0 +1,216 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.view_more_content {
+  display: none;
+}
+.video_popover :global {
+  top: 50px !important;
+  position: fixed;
+
+  .ant-popover-inner-content {
+    padding: 0px 3px;
+    height: 80px;
+  }
+}
+.view_more_popover :global {
+  position: fixed;
+  .ant-popover-arrow {
+    right: 4px;
+  }
+  span {
+    cursor: pointer;
+  }
+}
+
+.view_more_content {
+  color: $white-color;
+  display: none;
+}
+.blink {
+  height: 5px;
+  animation: blinker 1s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+  width: 5px;
+  background: $error-clr;
+  border-radius: 50%;
+  left: 5px;
+  top: 29.5px;
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  @include respond(small) {
+    left: 4.5px;
+    top: 30.2px;
+  }
+}
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+// .header {
+//   // width: 100%;
+// }
+.site_page_header {
+  background-color: $navbar-background;
+  min-height: 60px;
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+  width: 100vw;
+  // transition: all 0.8s ease;
+  position: fixed;
+  z-index: 9;
+  .icon {
+    width: 18.28px;
+    height: 8.53px;
+    svg {
+      fill: transparent;
+      width: 20px;
+      height: 16px;
+      cursor: pointer;
+    }
+    &.poor_network {
+      svg {
+        path {
+          fill: $network-poor;
+        }
+      }
+    }
+    &.no_network {
+      svg {
+        path {
+          fill: $error-clr;
+        }
+      }
+    }
+  }
+  .content_div {
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    column-gap: 21px;
+    transition: all 0.8 ease;
+    .helpiconbtn {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      color: $white-color;
+      column-gap: 9px;
+      cursor: pointer;
+
+      .text {
+        font-weight: 400;
+        max-height: 60px;
+        padding: 6px 0 0 0;
+        margin-top: 22px;
+        @include fontSize(6px);
+        line-height: 19px;
+        color: inherit;
+        color: $white-color;
+        background: transparent;
+        border-color: transparent;
+        padding: 0;
+        cursor: pointer;
+      }
+    }
+  }
+  .que_label {
+    @include fontSize(6px);
+    line-height: 19px;
+    color: $white-color;
+    background: transparent;
+    border-color: transparent;
+    margin: 0;
+    padding: 6px 0 0 0;
+    cursor: pointer;
+  }
+  @include respond(Xlarge) {
+  }
+  @include respond(large) {
+  }
+  @include respond(max_mid) {
+  }
+  @include respond(medium) {
+  }
+  @include respond(small) {
+    .icon {
+      svg {
+        cursor: pointer;
+        width: 16px;
+        height: 14px;
+      }
+    }
+    .content_div {
+      column-gap: 12px;
+      .helpiconbtn {
+        .text {
+          display: none;
+        }
+      }
+    }
+    .view_more_content {
+      display: block;
+      width: 18.28px;
+      height: 8.53px;
+    }
+    .que_label {
+      display: none;
+    }
+  }
+}
+.video_icon_wrapper {
+  margin-top: 10px;
+  position: relative;
+  @include respond(small) {
+    margin-top: 5px;
+  }
+}
+.video_capture {
+  margin-top: -2px;
+  position: absolute;
+  margin-left: -75px;
+  border: 1px solid;
+  background: white;
+  padding: 1px 0px;
+  height: 122px;
+  video {
+    height: 118px;
+    width: 160px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 45%;
+    border: 7px solid transparent;
+    border-bottom-color: $navbar-border-bottom-clr;
+  }
+}
+.video_capture_height {
+  border: none;
+  height: 0px;
+  video {
+    height: 0px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 45%;
+    display: none;
+    border: 7px solid transparent;
+    border-bottom-color: $navbar-border-bottom-clr;
+  }
+}

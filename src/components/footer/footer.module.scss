@@ -1,0 +1,19 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+
+.footercl {
+  background-color: $light-grey;
+  bottom: 0;
+  position: static;
+  width: 100%;
+  padding: 1px;
+  border-top: 1px solid $line-bg;
+}
+.footer_text {
+  text-align: center;
+  @include fontSize(2);
+  line-height: 15.6px;
+  color: $footer-text;
+  margin-top: 20px;
+  height: 25px;
+}

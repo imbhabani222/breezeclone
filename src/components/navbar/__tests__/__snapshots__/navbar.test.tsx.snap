@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar snapshot matches with Navbar component 1`] = `
+<DocumentFragment>
+  <header
+    class="ant-layout-header site_page_header"
+  >
+    <span
+      class="anticon logo"
+      role="img"
+      tabindex="-1"
+      title="do select logo"
+    >
+      <svg
+        aria-hidden="true"
+        class=""
+        fill="currentColor"
+        focusable="false"
+        height="1em"
+        width="1em"
+      >
+        logo.svg
+      </svg>
+    </span>
+    <div
+      class="que_label"
+      title="View All Questions"
+    >
+      View All Questions
+    </div>
+    <div
+      class="content_div"
+    >
+      <div
+        class="helpiconbtn"
+      >
+        <span
+          class="anticon icon"
+          role="img"
+          title="Help"
+        >
+          <svg
+            aria-hidden="true"
+            class=""
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            width="1em"
+          >
+            help.svg
+          </svg>
+        </span>
+        <div
+          class="ant-typography text"
+        >
+          Help
+        </div>
+      </div>
+      <div>
+        <span
+          aria-label="more"
+          class="anticon anticon-more view_more_content"
+          data-testid="more-popover"
+          role="img"
+          tabindex="-1"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="more"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M456 231a56 56 0 10112 0 56 56 0 10-112 0zm0 280a56 56 0 10112 0 56 56 0 10-112 0zm0 280a56 56 0 10112 0 56 56 0 10-112 0z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;

@@ -1,0 +1,643 @@
+@import "../.././commonStyles/color.module.scss";
+@import "../.././commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+// .container {
+//   margin-top: 60px;
+//   display: flex;
+//   flex-direction: column;
+//   background-color: $light-white;
+//   border-top: 1px solid $support-border-color;
+//   border-bottom: 1px solid $support-border-color;
+//   $dp: &;
+//   .layout {
+//     width: 85%;
+//     min-height: 106px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     // padding: 0 106px;
+//     max-width: 1230px;
+//     margin: auto;
+//     padding: 30px 0px 30px 0px;
+//     &.backGroundTypeTwo {
+//       img {
+//         height: 27px;
+//         width: 36px;
+//       }
+//       &.layout {
+//         &:last-child {
+//           // background: linear-gradient(
+//           //   180deg,
+//           //   $white-color 0%,
+//           //   $light-white 100%
+//           // );
+//           width: 85%;
+//           // max-width: 1230px;
+//           height: 85px;
+//           border: 0;
+//           // padding: 0px 102px 0px 102px;
+//           margin: 0 auto;
+//           // padding-bottom: 155px;
+//           // border-top: 1px solid $support-border-color;
+//           // border-bottom: 1px solid $support-border-color;
+//         }
+//       }
+//     }
+//     &:last-child {
+//       border-top: 1px solid $gray-91;
+//       border-bottom: 1px solid $gray-91;
+//     }
+//     .hide_databar_content {
+//       display: none !important;
+//     }
+//     .databar_wrapper_container {
+//       display: flex;
+//       column-gap: 10px;
+//       justify-content: center;
+//       align-items: center;
+//       .progressbar_col {
+//         width: 320px;
+//         .progressbar_text {
+//           @include fontSize(6);
+//           width: max-content;
+//           font-style: normal;
+//           font-weight: normal;
+//           line-height: 24px;
+//           color: $databar-subtitle-color;
+//         }
+//       }
+//     }
+//     img {
+//       height: 60px;
+//       width: 60px;
+//     }
+//     .databar_title {
+//       @include fontWeight(300);
+//       @include fontSize(8);
+//       text-align: initial;
+//       line-height: 24px;
+//       color: $black-color;
+//     }
+//     .databar_subtitle {
+//       @include fontSize(6);
+//       text-align: initial;
+//       font-weight: normal;
+//       line-height: 24px;
+//       color: $databar-subtitle-color;
+//       width: max-content;
+//     }
+//     .typeTwo {
+//       display: block;
+//       margin-left: auto;
+//       .containerTwo {
+//         column-gap: 30px;
+//         .content {
+//           display: flex;
+//           column-gap: 10px;
+//           .databar_wrapper_container {
+//             justify-content: space-evenly;
+//             width: 270px;
+//             &:last-child {
+//               width: 250px;
+//             }
+//             .databar_title {
+//               max-width: 200px;
+//             }
+//           }
+//           .hide_databar_content {
+//             display: none;
+//           }
+//         }
+//         .support_text {
+//           display: flex;
+//           margin-top: 4px;
+//           font-style: normal;
+//           font-weight: bold;
+//           @include fontSize(6);
+//           line-height: 24px;
+//           color: $black-color;
+//         }
+//       }
+//     }
+//     .databar_btn {
+//       min-height: 36px;
+//       width: 214px;
+//       display: flex;
+//       justify-items: center;
+//       border: 1px solid $databar-btn-border-color;
+//       justify-content: center;
+//       span {
+//         @include fontWeight(100);
+//         @include fontSize(5px);
+//         color: $normal-btn-txt-clr;
+//         line-height: 24px;
+//         svg {
+//           width: 15px;
+//           height: 15px;
+//           stroke: 2px;
+//         }
+//         span {
+//           @include fontSize(5px);
+//           @include fontWeight(100);
+//           font-style: normal;
+//           text-align: left;
+//           line-height: 26px;
+//         }
+//       }
+//       svg {
+//         margin-top: 5px;
+//       }
+//     }
+//   }
+//   .calendar_double_line {
+//     display: flex;
+//     flex-direction: column;
+//     .databar_wrapper {
+//       display: flex;
+//       flex-direction: row;
+//       column-gap: 6px;
+//       justify-content: space-between;
+//       align-items: center;
+//     }
+//   }
+//   @include respond(Xlarge) {
+//     .layout {
+//       &:nth-child(even) {
+//         // background-color: $white-color;
+//       }
+//     }
+//   }
+//   @include respond(large) {
+//     .layout {
+//       &:nth-child(even) {
+//         // background-color: $white-color;
+//       }
+//       // &:last-child {
+//       //   padding: 0px 102px 0px 102px;
+//       // }
+//     }
+//   }
+//   @include respond(max_mid) {
+//     .layout {
+//       display: block;
+//       width: 85%;
+//       border-width: 0 0 1px 0;
+//       // padding: 0 97px;
+//       flex-flow: row wrap;
+//       row-gap: 22px;
+//       &:nth-child(even) {
+//         background-color: $light-white;
+//       }
+//       .databar_wrapper_container {
+//         width: 50%;
+//         column-gap: 15px;
+//         justify-content: flex-start;
+//         height: 85px;
+//       }
+//       .hide_databar_content {
+//         display: none;
+//       }
+//       .databar_btn {
+//         margin: 22px 0;
+//         width: 314px;
+//       }
+//     }
+//   }
+//   @include respond(medium) {
+//     .layout {
+//       border-width: 0 0 1px 0;
+//       // padding: 0 20px;
+//       flex-flow: row wrap;
+//       &:nth-child(even) {
+//         background-color: $light-white;
+//       }
+//       .databar_wrapper_container {
+//         width: 50%;
+//         column-gap: 15px;
+//         justify-content: flex-start;
+//         height: 85px;
+//       }
+//       .hide_databar_content {
+//         display: none;
+//       }
+//       .databar_btn {
+//         width: 314px;
+//       }
+//     }
+//   }
+//   @include respond(small) {
+//     &:nth-child(even) {
+//       background-color: $light-white;
+//     }
+//     flex-direction: column;
+//     flex-flow: row wrap;
+//     .layout {
+//       // padding: 10px 20px 0;
+//       min-height: 0px;
+//       column-gap: 20px;
+//       &:last-child {
+//         padding: 0px 20px 10px;
+//         border-color: $gray-91;
+//         border-style: solid;
+//         border-width: 0 0 1px 0;
+//       }
+//       .databar_wrapper_container {
+//         width: 100%;
+//         column-gap: 15px;
+//         justify-content: flex-start;
+//         height: 70px;
+//         .progressbar_col {
+//           width: 100%;
+//         }
+//         img {
+//           height: 50px;
+//           width: 50px;
+//         }
+//         .databar_title {
+//           @include fontSize(6);
+//           line-height: 15px;
+//         }
+//         .databar_subtitle {
+//           @include fontSize(5);
+//           line-height: 22px;
+//         }
+//       }
+//       .hide_databar_content {
+//         display: none;
+//       }
+//       .databar_btn {
+//         width: 100%;
+//       }
+
+//       .typeTwo {
+//         margin-left: 0px;
+//         .containerTwo {
+//           flex-direction: column;
+//           align-content: flex-start;
+//           align-items: flex-start;
+//           .content {
+//             flex-direction: column;
+//             .databar_wrapper_container {
+//               justify-content: flex-start;
+//             }
+//             .hide_databar_content {
+//               display: none;
+//             }
+//           }
+//         }
+//       }
+//       &.backGroundTypeTwo {
+//         &.layout {
+//           &:last-child {
+//             background: $light-white;
+//             height: fit-content;
+//             border: 0;
+//             padding-bottom: 0px;
+//           }
+//         }
+//       }
+//     }
+//     .databar_subtitle {
+//       @include fontSize(6);
+//       text-align: initial;
+//       font-weight: normal;
+//       line-height: 24px;
+//       color: $databar-subtitle-color;
+//       width: max-content;
+//       @include respond(small) {
+//         @include fontSize(5);
+//         line-height: 22px;
+//       }
+//     }
+//     .email_class img {
+//       height: 22.5px !important;
+//       width: 30px !important;
+//     }
+//   }
+// }
+// :export {
+//   progress_stroke_width: 10;
+// }
+
+.container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  background-color: $light-white;
+  border-top: 1px solid $support-border-color;
+  border-bottom: 1px solid $support-border-color;
+  $dp: &;
+  .layout {
+    width: 100%;
+    min-height: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding: 0 106px;
+    max-width: 1600px;
+    margin: auto;
+    padding: 30px 102px 30px 102px;
+    &.backGroundTypeTwo {
+      img {
+        height: 27px;
+        width: 36px;
+      }
+      &.layout {
+        &:last-child {
+          // background: linear-gradient(
+          //   180deg,
+          //   $white-color 0%,
+          //   $light-white 100%
+          // );
+          max-width: 1230px;
+          // height: 284px;
+          padding: 30px 0;
+          border: 0;
+          // padding-bottom: 155px;
+          // border-top: 1px solid $support-border-color;
+          // border-bottom: 1px solid $support-border-color;
+        }
+      }
+    }
+    &:last-child {
+      border-top: 1.5px solid $gray-91;
+      border-bottom: 1.5px solid $gray-91;
+    }
+    .hide_databar_content {
+      display: none !important;
+    }
+    .databar_wrapper_container {
+      display: flex;
+      column-gap: 10px;
+      justify-content: center;
+      align-items: center;
+      .progressbar_col {
+        width: 320px;
+        .progressbar_text {
+          @include fontSize(6);
+          width: max-content;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 24px;
+          color: $databar-subtitle-color;
+        }
+      }
+    }
+    img {
+      height: 60px;
+      width: 60px;
+    }
+    .databar_title {
+      @include fontWeight(300);
+      @include fontSize(8);
+      text-align: initial;
+      line-height: 24px;
+      color: $black-color;
+    }
+    .databar_subtitle {
+      @include fontSize(6);
+      text-align: initial;
+      font-weight: normal;
+      line-height: 24px;
+      color: $databar-subtitle-color;
+      width: max-content;
+    }
+    .typeTwo {
+      display: block;
+      margin-left: auto;
+      .containerTwo {
+        column-gap: 30px;
+        .content {
+          display: flex;
+          column-gap: 10px;
+          .databar_wrapper_container {
+            justify-content: space-evenly;
+            width: 270px;
+            &:last-child {
+              width: 250px;
+            }
+            .databar_title {
+              max-width: 200px;
+            }
+          }
+          .hide_databar_content {
+            display: none;
+          }
+        }
+        .support_text {
+          display: flex;
+          margin-top: 4px;
+          font-style: normal;
+          font-weight: bold;
+          @include fontSize(6);
+          line-height: 24px;
+          color: $black-color;
+        }
+      }
+    }
+    .databar_btn {
+      min-height: 36px;
+      width: 214px;
+      display: flex;
+      justify-items: center;
+      border: 1px solid $databar-btn-border-color;
+      justify-content: center;
+      span {
+        @include fontWeight(100);
+        @include fontSize(5px);
+        color: $normal-btn-txt-clr;
+        line-height: 24px;
+        svg {
+          width: 15px;
+          height: 15px;
+          stroke: 2px;
+        }
+        span {
+          @include fontSize(5px);
+          @include fontWeight(100);
+          font-style: normal;
+          text-align: left;
+          line-height: 26px;
+        }
+      }
+      svg {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .calendar_double_line {
+    display: flex;
+    flex-direction: column;
+    .databar_wrapper {
+      display: flex;
+      flex-direction: row;
+      column-gap: 6px;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  @include respond(Xlarge) {
+    .layout {
+      &:nth-child(even) {
+        // background-color: $white-color;
+      }
+    }
+  }
+  @include respond(large) {
+    .layout {
+      &:nth-child(even) {
+        background-color: $white-color;
+      }
+      &.backGroundTypeTwo {
+        &.layout {
+          &:last-child {
+            padding: 30px 85px 30px 85px;
+          }
+        }
+      }
+    }
+  }
+  @include respond(max_mid) {
+    .layout {
+      display: block;
+      width: 100%;
+      border-width: 0 0 1px 0;
+      padding: 0 97px;
+      flex-flow: row wrap;
+      row-gap: 22px;
+      &:nth-child(even) {
+        background-color: $light-white;
+      }
+      .databar_wrapper_container {
+        width: 50%;
+        column-gap: 15px;
+        justify-content: flex-start;
+        height: 85px;
+      }
+      .hide_databar_content {
+        display: none;
+      }
+      .databar_btn {
+        margin: 22px 0;
+        width: 314px;
+      }
+    }
+  }
+  @include respond(medium) {
+    .layout {
+      border-width: 0 0 1px 0;
+      padding: 0 20px;
+      flex-flow: row wrap;
+      &:nth-child(even) {
+        background-color: $light-white;
+      }
+      .databar_wrapper_container {
+        width: 50%;
+        column-gap: 15px;
+        justify-content: flex-start;
+        height: 85px;
+      }
+      .hide_databar_content {
+        display: none;
+      }
+      .databar_btn {
+        width: 314px;
+      }
+    }
+  }
+  @include respond(small) {
+    &:nth-child(even) {
+      background-color: $light-white;
+    }
+    flex-direction: column;
+    // flex-flow: row wrap;
+    .layout {
+      padding: 10px 20px 0;
+      min-height: 0px;
+      column-gap: 20px;
+      &:last-child {
+        padding: 25px 20px 20px;
+        border-color: $gray-91;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+      }
+      .databar_wrapper_container {
+        width: 100%;
+        column-gap: 20px;
+        justify-content: flex-start;
+        height: 70px;
+        .progressbar_col {
+          width: 100%;
+        }
+        img {
+          height: 50px;
+          width: 50px;
+        }
+        .databar_title {
+          @include fontSize(6);
+          line-height: 15px;
+        }
+        .databar_subtitle {
+          @include fontSize(5);
+          line-height: 22px;
+        }
+      }
+      .hide_databar_content {
+        display: none;
+      }
+      .databar_btn {
+        min-width: 320px;
+        width: 100%;
+      }
+
+      .typeTwo {
+        margin-left: 0px;
+        .containerTwo {
+          flex-direction: column;
+          align-content: flex-start;
+          align-items: flex-start;
+          .content {
+            flex-direction: column;
+            .databar_wrapper_container {
+              justify-content: flex-start;
+            }
+            .hide_databar_content {
+              display: none;
+            }
+          }
+        }
+      }
+      &.backGroundTypeTwo {
+        &.layout {
+          &:last-child {
+            background: $light-white;
+            height: fit-content;
+            border: 0;
+            padding: 0 25px;
+          }
+        }
+      }
+    }
+    .databar_subtitle {
+      @include fontSize(6);
+      text-align: initial;
+      font-weight: normal;
+      line-height: 24px;
+      color: $databar-subtitle-color;
+      width: max-content;
+      @include respond(small) {
+        @include fontSize(5);
+        line-height: 22px;
+      }
+    }
+    .email_class img {
+      height: 22.5px !important;
+      width: 30px !important;
+    }
+  }
+}
+:export {
+  progress_stroke_width: 10;
+}

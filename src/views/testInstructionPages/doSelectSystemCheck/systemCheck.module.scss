@@ -1,0 +1,482 @@
+@import "../../../commonStyles/font.module.scss";
+@import "../../../commonStyles//media-queries.scss";
+@import "../landingAndAssessment/instructionPageStyle.module.scss";
+
+.system_check_main_div {
+  .visualizer_main_div {
+    margin-top: 5px;
+  }
+  .custom_margin {
+    margin-right: 28px;
+  }
+  .dd_radius {
+    width: 70%;
+  }
+  .nonProctor_img {
+    align-self: end;
+    img {
+      width: 100%;
+      height: 340px;
+    }
+    @include respond(medium) {
+      img {
+        display: none;
+      }
+    }
+  }
+  .dd_radius :global {
+    .ant-select-selector {
+      border-radius: 5px;
+      height: 35px;
+      border: 1px solid $dropdown-border;
+      .ant-select-selection-item {
+        line-height: 33px;
+      }
+    }
+    .ant-select-suffix svg {
+      color: $normal-btn-txt-clr;
+    }
+  }
+  .proctor_right_col {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+  .videoStatus {
+    color: $error-clr !important;
+    margin-left: 5px;
+  }
+  .videoStatusInfo {
+    padding: 20px 10px;
+    margin-top: 20px;
+    background: $assessment-bg;
+    display: flex;
+  }
+  .videoStatusInfo img {
+    margin-top: 5px;
+    height: 17px;
+    margin-right: 6px;
+  }
+
+  .play_sound_btn {
+    width: 136px;
+    height: 30px;
+    background: $button;
+    border-radius: 30px;
+    font-weight: bold;
+    @include fontSize(4);
+    line-height: 17px;
+    color: $white-color;
+    border: none;
+  }
+  .speaker_icon {
+    width: 20px;
+  }
+  .test_system_width {
+    width: 100%;
+    .right_content {
+      margin-left: 39px;
+    }
+  }
+  .spin_icon :global {
+    .anticon svg {
+      color: $svg-clr;
+    }
+  }
+  .error_icon {
+    margin-left: 10px;
+  }
+  .col_div {
+    height: 100%;
+    // margin-bottom: 20px;
+    border: 1px solid $system-check-border;
+    border-radius: 5px;
+  }
+  .right_col {
+    @include respond(medium) {
+      margin-top: 10px;
+    }
+  }
+  .system_check_card {
+    padding: 30px 30px 0px 30px;
+    background: $white-color;
+    box-sizing: border-box;
+    border-radius: 5px;
+    div:nth-child(4) {
+      border-bottom: none;
+    }
+    @include respond(small) {
+      padding: 0;
+    }
+  }
+  .test_info_txt {
+    white-space: nowrap;
+    @include fontSize(2);
+    @include fontWeight(100);
+    color: $normal-btn-txt-clr;
+  }
+  .failed_text {
+    color: $error-clr !important;
+  }
+  .system_check_card_header {
+    margin: 0px 0px 36px 17px;
+    @include fontSize(8);
+    font-weight: bold;
+    line-height: 24px;
+    color: $normal-btn-txt-clr;
+    span {
+      margin-left: 10px;
+      color: $app-dark-color;
+    }
+    @include respond(small) {
+      @include fontSize(6);
+      margin: 28px 17px;
+    }
+  }
+  .system_check_content {
+    .d_flex {
+      padding: 9px 0px;
+    }
+    padding: 15px;
+    border-bottom: 1px dashed $system-content-border;
+    margin-top: 20px;
+    display: flex;
+    width: 92%;
+    margin: 1rem auto;
+    ul {
+      list-style: none;
+      margin-left: -10px;
+      width: 100vw;
+    }
+    .system_check_content_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: bold;
+      @include fontSize(6);
+      line-height: 19px;
+      color: $black-color;
+      @include respond(small) {
+        @include fontSize(5);
+      }
+    }
+
+    .left_check_icon {
+      margin-top: -40px;
+    }
+    .system_check_content_subheader {
+      margin-top: 13px;
+      @include fontSize(4);
+      line-height: 17px;
+      color: $system-content-subheader;
+      @include respond(small) {
+        @include fontSize(3);
+      }
+    }
+    .right_check_icon {
+      margin-left: 7px;
+    }
+    .system_check_btn {
+      background: $white-color;
+      border: 1px solid $button;
+      box-sizing: border-box;
+      border-radius: 30px;
+    }
+    .responsive_col {
+      margin-top: 43px;
+    }
+    @media (max-width: 991px) {
+      .responsive_col {
+        padding: 20px 40px;
+      }
+    }
+  }
+  .system_check_content_right {
+    margin-top: 0px;
+  }
+
+  .custom_margin {
+    margin-right: 19px;
+  }
+  .mic_icon {
+    margin-right: 22px;
+  }
+  .play_sound_btn {
+    img {
+      margin-right: 9px;
+    }
+  }
+  .audio_div {
+    margin-top: -15px;
+  }
+
+  .test_check_array {
+    margin-top: -20px;
+  }
+
+  .test_check_array {
+    div:nth-child(3) {
+      border-bottom: none;
+    }
+  }
+  .camera_screen {
+    text-align: center;
+    display: inline-block;
+    width: 126px;
+    position: relative;
+    height: 97px;
+    background: $camera-screen-clr;
+    border-radius: 5px;
+    padding: 20px;
+    span {
+      @include fontStyle(12px, 500, $white-color);
+    }
+    img {
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+  .systemCheck_video {
+    height: 95.5px;
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    padding: 4px;
+    top: 0;
+  }
+}
+.identity_check {
+  .webcamClass video {
+    height: 210px;
+    width: 276px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .capturedImg {
+    width: 276px;
+    border: 0.1px solid black;
+    margin: auto;
+    /* padding: 10px; */
+    border-radius: 10px;
+    height: 210px;
+    img {
+      width: 276px;
+      /* border: 1px solid black; */
+      padding: 10px;
+    }
+  }
+
+  .declaration {
+    // background: #f5f9f9;
+    border-radius: 10px;
+  }
+  overflow-x: hidden;
+  .checkbox_text_identity {
+    @include fontWeight(200);
+    @include fontSize(6);
+    line-height: 30px;
+    color: $black-color;
+    margin: 16px;
+    @include respond(small) {
+      @include fontSize(4);
+      line-height: 24px;
+    }
+  }
+  .ellipse_parent_div {
+    display: flex;
+  }
+  .toggleDisplay {
+    display: none;
+  }
+  .checkbox_identity {
+    @include dFlex(flex, flex-start, center, "");
+    padding: 10px 30px;
+    margin-top: 10px;
+  }
+  .video_captured {
+    @include fontWeight(200);
+    @include fontSize(3);
+    @include dFlex(flex, center, center, "");
+    color: $captured-text-clr;
+    background-color: $captured-btn-bg;
+    width: 223px;
+    height: 30px;
+    margin: 15px auto;
+    border: 1px solid $app-dark-color;
+    box-sizing: border-box;
+    border-radius: 6px;
+    img {
+      margin-right: 10px;
+    }
+  }
+  .identity_info_txt {
+    @include fontWeight(200);
+    @include fontSize(8);
+    line-height: 30px;
+    color: $black-color;
+    @include respond(small) {
+      @include fontSize(4);
+      line-height: 24px;
+    }
+  }
+  .check_box_style {
+    margin-top: 20px;
+    @include respond(small) {
+      margin-top: 15px;
+    }
+  }
+  .identity_left_content_error {
+    margin: 0px 0px 60px 40px;
+    align-items: flex-start;
+    background: $error-bg;
+    padding: 10px !important;
+    border-radius: 10px;
+    display: flex;
+    @include respond(small) {
+      margin: 0;
+    }
+    .identity_info_txt {
+      @include fontSize(5);
+    }
+  }
+  .identity_left_content_loading :global {
+    margin: 0px 0px 0px 40px;
+    align-items: flex-start;
+    background: $assessment-bg;
+    padding: 10px !important;
+    border-radius: 10px;
+    @include fontWeight(200);
+    @include fontSize(5);
+    line-height: 30px;
+    color: $black-color;
+    .ant-spin-dot {
+      width: 3em;
+      height: 2em;
+    }
+  }
+  .identity_left_content {
+    padding: 0px 0px 0px 40px;
+    align-items: flex-start;
+    display: flex;
+    img {
+      margin: 9px 9px 0;
+    }
+  }
+  .info_main_div {
+    padding: 7px 0px 30px 80px;
+  }
+  .web_cam {
+    text-align: center;
+    position: relative;
+    margin-top: 9px;
+  }
+  .video_class {
+    margin-top: 1rem;
+    background: $white-color;
+    border: 2px solid $normal-btn-txt-clr;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 183px;
+    width: 229px;
+    padding: 10px;
+  }
+  .snapshot_btn {
+    margin-top: 16px;
+    font-weight: bold;
+    @include fontSize(6);
+    line-height: 24px;
+    width: 187px;
+    height: 40px;
+    background: $white-color;
+    border: 1px solid $snapshot-btn;
+    box-sizing: border-box;
+    border-radius: 30px;
+    img {
+      margin: -3px 10px 0px 0px;
+    }
+    span {
+      color: $normal-btn-txt-clr;
+    }
+    @include respond(small) {
+      @include fontSize(4);
+      @include dFlex(flex, center, center, "");
+      width: 163px;
+      margin: 19px auto 0px;
+      height: 35px;
+      line-height: 0;
+      img {
+        margin: 0px 10px 0px 0px;
+      }
+    }
+  }
+  .ant_checkbox {
+    height: 20px;
+  }
+  .canvas_class {
+    position: absolute;
+    margin: 28px 20px 20px -103px;
+    height: 160px;
+    width: 385px;
+  }
+  .camImage {
+    height: 149px;
+    position: absolute;
+    margin: 33px 0px 33px 14px;
+    width: 376px;
+  }
+  @include respond(small) {
+    .checkbox_identity {
+      padding: 0 15px;
+    }
+    .identity_left_content {
+      display: flex;
+      padding: 0;
+      align-items: start;
+      justify-content: center;
+    }
+    .info_main_div {
+      padding: 10px;
+    }
+  }
+  .common_text_header {
+    @include respond(small) {
+      @include fontSize(4);
+    }
+  }
+}
+.visualizer {
+  border: 0.1px solid $visualizer-border;
+  border-radius: 5px;
+  padding: 5px 15px;
+  display: inline-block;
+  overflow: hidden;
+  width: 129px;
+  position: relative;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+}
+.visualizer svg {
+  position: absolute;
+  margin-top: -30px;
+  height: 60px;
+  width: 90px;
+  display: block;
+}
+
+.visualizer path {
+  margin-right: 200px;
+  stroke-linecap: square;
+  stroke: $white-color;
+  stroke-width: 0.5px;
+  padding: 200px;
+}
+.stop {
+  offset: "0%";
+  stop-color: $visualizer-bar;
+  stop-opacity: 1;
+}
+.rect {
+  width: 100%;
+  height: 100%;
+}

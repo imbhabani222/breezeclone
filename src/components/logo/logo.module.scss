@@ -1,0 +1,13 @@
+@import "../../commonStyles/media-queries.scss";
+.logo {
+  svg {
+    width: 126px;
+    height: 25px;
+  }
+  @include respond(small) {
+    svg {
+      width: 100px;
+      height: 20px;
+    }
+  }
+}

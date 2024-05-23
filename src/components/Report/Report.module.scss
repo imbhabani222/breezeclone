@@ -1,0 +1,205 @@
+@import "../.././commonStyles/color.module.scss";
+@import "../.././commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.report_modal :global {
+  // padding: 20px 60px;
+
+  .ant-modal-close-x {
+    color: $white-color;
+  }
+
+  .ant-radio-button-wrapper {
+    width: 72.5%; //70%
+    padding: 0px 19px;
+    height: 37px;
+    border: 1px solid $radiobtn-border-color;
+    border-radius: 5px !important;
+    color: $black-color;
+    text-align: left;
+    @include respond(medium) {
+      width: 100%; //70%
+    }
+    @include respond(small) {
+      @include fontSize(4);
+    }
+  }
+
+  // @media screen and (max-width: 600px) {
+  // }
+
+  span {
+    @include fontSize(6);
+    vertical-align: middle;
+    @include respond(medium) {
+      @include fontSize(4);
+    }
+    @include respond(small) {
+      @include fontSize(4);
+    }
+  }
+
+  h2 {
+    margin: 30px 14%;
+    color: $modal-header-txt;
+    font-family: "Lato";
+    font-style: normal;
+    @include fontWeight(300);
+    @include fontSize(12);
+
+    line-height: 24px;
+    @include respond(medium) {
+      margin: 30px 1%;
+      @include fontSize(10);
+    }
+    @include respond(small) {
+      @include fontSize(6);
+    }
+  }
+
+  .ant-radio-group {
+    width: 100%;
+
+    .ant-space {
+      width: 100%;
+      gap: 30px !important;
+    }
+  }
+  .inputLable {
+    text-align: left;
+    margin-left: 14%;
+    @include fontWeight(0);
+    @include fontSize(6);
+    line-height: 24px;
+    margin-top: 12px;
+    @include respond(medium) {
+      margin-left: 0% !important;
+      @include fontSize(5);
+    }
+  }
+
+  .ant-input {
+    width: 72.5%;
+    margin: 7px 0px 40px 0px; //88px
+    height: 37px;
+    border: 1px solid $radiobtn-border-color;
+    border-radius: 5px;
+    @include respond(medium) {
+      width: 100% !important;
+    }
+  }
+  .Inputlabel {
+    margin: 5px 90px;
+  }
+  .modal_modal_btn_div__nqTr4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 30px 0 10px;
+    column-gap: 10px;
+  }
+  .ant-modal-header {
+    background: $report-btn-color;
+    .ant-modal-title {
+      color: $white-color;
+    }
+  }
+
+  .ant-modal-body :global {
+    text-align: center;
+
+    .ant-row {
+      justify-content: center;
+
+      .ant-input {
+        width: 85%;
+        height: 100%;
+        border: 1px solid $radiobtn-border-color;
+        border-radius: 5px;
+        color: $black-color;
+        text-align: left;
+        padding: 2%;
+        box-shadow: none;
+      }
+
+      .ant-col {
+        // .buttonGrp_btnGrp__3REGX {
+        //   .buttonGrp_btn__\+bJq6 {
+        //     .buttonGrp_filledBtn__6pxzT {
+        //       width: 200px !important;
+        //       height: 40px;
+        //       background: $button;
+        //       border: 1px solid $button;
+        //       color: $white-color;
+        //       border-radius: 40px;
+        //       margin: 2%;
+        //       font-family: "Lato";
+        //       font-style: normal;
+        //       font-weight: 900;
+        //       @include fontSize(8px);
+        //       line-height: 24px;
+        //     }
+        //   }
+        // }
+        // button {
+        //   width: 200px;
+        //   height: 40px;
+        //   background: $button;
+        //   border: 1px solid $button;
+        //   color: $white-color;
+        //   border-radius: 40px;
+        //   margin: 2%;
+        // }
+        .buttonGrp_filledBtn__6pxzT {
+          width: 200px !important;
+          height: 40px;
+          background: $button;
+          border: 1px solid $button;
+          color: $white-color;
+          border-radius: 40px;
+          margin: 2%;
+          font-family: "Lato";
+          font-style: normal;
+          @include fontWeight(500);
+          @include fontSize(8);
+          line-height: 24px;
+        }
+        .ant-radio-group {
+          width: 100%;
+
+          .ant-space {
+            width: 100%;
+
+            .ant-space-item {
+              width: 100%;
+              margin: 8px 0;
+              .ant-radio-button-wrapper-checked {
+                background-color: $report-checkbtn-bg-color;
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.report_container {
+  .report_btn {
+    background: $report-btn-color;
+    border-radius: 30px;
+    color: $white-color;
+    border: 0;
+  }
+}
+// .buttonGrp_btnGrp {
+//   width: 200px;
+//   .ant-btn {
+//     width: 200px;
+//   }
+// }
+// div.ant-modal-content {
+//   border-top: 20px solid $modal-head;
+// }

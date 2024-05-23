@@ -1,0 +1,273 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.split_flex {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  @include respond(max_mid) {
+    display: block;
+    height: unset;
+  }
+}
+.video_test_wrapper {
+  position: fixed;
+  width: 100%;
+  @include respond(max_mid) {
+    position: unset;
+  }
+}
+.video_test_wrapper :global {
+  .gutter {
+    background-position: 50% !important;
+  }
+  .gutter.gutter-horizontal {
+    cursor: ew-resize;
+    background: $coding-vertical-clr;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/expand.svg");
+  }
+}
+.subHeader_wrapper div:first-child {
+  margin: 35px;
+  padding: 0px 5px;
+  background: $question-header-background;
+  @include respond(max_mid) {
+    margin: 8px 7px;
+    padding: unset;
+  }
+}
+.webcam_video {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+}
+.description {
+  padding: 0px 20px;
+  .desc_txt {
+    @include fontSize(10);
+    @include fontWeight(300);
+  }
+  @include respond(max_mid) {
+    margin-bottom: unset;
+  }
+}
+.vid_time {
+  margin: 0px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  @include fontSize(6);
+  line-height: 19px;
+  font-weight: normal;
+}
+.left_content {
+  padding-left: 10px;
+  overflow-x: scroll;
+  max-height: calc(100vh - 180px);
+  background: $subjective-ques-bg-clr;
+  min-width: 20%;
+  @include respond(max_mid) {
+    overflow: hidden;
+    height: auto;
+    max-height: none;
+    min-height: unset;
+    width: 100% !important;
+  }
+}
+.disable_btn {
+  color: $black-color !important;
+  opacity: 0.4;
+}
+.right_content {
+  margin-bottom: 10%;
+  overflow: scroll;
+  max-height: calc(100vh - 180px);
+  min-width: 51%;
+  padding-bottom: 20px;
+  @include respond(max_mid) {
+    width: 100% !important;
+    overflow: hidden;
+    max-height: calc(100vh - 10px);
+  }
+}
+// .button_container :global {
+//   .ant-btn:focus {
+//     color: unset !important;
+//   }
+// }
+.button_container {
+  display: flex;
+  width: 560px;
+  margin: auto;
+  .record_btn {
+    border: 1.5px solid $video-btn-border-clr;
+    // box-sizing: border-box;
+    // border-radius: 5px;
+    // border: 1px solid $report-btn-color;
+    &:hover {
+      color: $black-color;
+    }
+  }
+  .stop_btn {
+    background-color: $status-btn-red;
+    border: none;
+    color: $white-color;
+  }
+  .pause_btn {
+    background-color: $report-btn-color;
+    color: $white-color;
+  }
+  .disabled {
+    background: $fill-in-blanks-footer-clr !important;
+    color: $color-gry !important;
+  }
+  .submit_btn {
+    margin-right: 0;
+    margin-left: auto;
+    justify-content: center;
+    background-color: $report-btn-color;
+    color: $white-color;
+  }
+  button {
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.1em;
+    @include fontWeight(300);
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+
+    img {
+      margin-right: 10px;
+      height: 18px;
+    }
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 30px;
+      // color: $clock-background;
+    }
+    @include respond(small) {
+      width: 100%;
+      padding: unset;
+      justify-content: center;
+      @include fontSize(3);
+      padding: 12px;
+    }
+  }
+  @include respond(max_mid) {
+    width: 95%;
+  }
+}
+.uploade_vid_loader {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  img {
+    height: 30px;
+    right: 0;
+    position: absolute;
+    margin-right: 20px;
+  }
+}
+.video_turnedOff {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  background-color: $video-bg-blank;
+  height: 40%;
+  @include respond(max_mid) {
+    height: 340px;
+    width: 95%;
+    margin-top: 10px;
+  }
+}
+.duration :global {
+  .ant-progress-bg {
+    background-color: $visualizer_stop_clr;
+  }
+}
+.duration {
+  margin: auto;
+  width: 560px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  @include respond(max_mid) {
+    margin-bottom: 10%;
+    width: 96%;
+  }
+}
+.videoDiv {
+  video {
+    height: 120px;
+    width: 150px;
+  }
+}
+.gum_video_empty {
+  background-color: $video-bg-blank !important;
+  video {
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  width: 560px;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  @include respond(max_mid) {
+    width: 96%;
+    margin-top: 10px !important;
+  }
+  @include respond(small) {
+    height: 240px;
+  }
+}
+.vid_type {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 20px;
+  img {
+    margin-right: 7px;
+  }
+
+  span {
+    @include fontSize(6);
+    @include fontWeight(300);
+  }
+}
+.problem_name {
+  @include fontSize(6);
+  @include fontWeight(300);
+  margin: 20px;
+}
+.gum_video {
+  background-color: $video-bg-blank !important;
+  video {
+    width: 100%;
+    border-radius: 10px;
+    @include respond(small) {
+      height: 240px;
+    }
+  }
+  width: 560px;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  @include respond(max_mid) {
+    width: 96%;
+    margin-top: 10px !important;
+  }
+}
+.submit_btn {
+  @include respond(small) {
+    width: 100%;
+    margin-right: 0%;
+  }
+}

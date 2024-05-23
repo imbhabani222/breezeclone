@@ -1,0 +1,235 @@
+@import "../.././commonStyles/color.module.scss";
+@import "../.././commonStyles/font.module.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.testResultContainer {
+  margin: 45px 13px;
+  height: 680px;
+  font-family: "Lato";
+  font-style: normal;
+  @include fontWeight(200);
+
+  .decriptionContainer {
+    margin-top: 20px;
+  }
+
+  .annotationContainer {
+    @include fontSize(6);
+  }
+
+  .casesContainer {
+    .label {
+      @include fontSize(6);
+
+      line-height: 17px;
+      color: $view-lable-clr;
+      margin-bottom: 2px;
+      margin-top: 30px;
+    }
+  }
+
+  .runTestBtn {
+    margin-top: -25px;
+    button {
+      color: $view-btn-clr;
+      width: 165px;
+      height: auto;
+      background: $white-color;
+      border: 1px solid $view-btn-clr;
+      border-radius: 4px;
+    }
+  }
+
+  .descBox {
+    width: 100%;
+    left: 571px;
+    top: 381px;
+    padding: 29px;
+    background: $white-color;
+    border: 1px solid $view-descbox-clr;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(121, 117, 117, 0.25);
+  }
+
+  .execution {
+    padding-top: 10px;
+    text-align: center;
+    background: $view-desc-bg-clr;
+    border: 0.5px solid $view-desc-border-clr;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: $view-execution-clr;
+    @include fontSize(5);
+  }
+  .descriptionText {
+    padding-top: 10px;
+    text-align: center;
+    background: $view-desc-bg-clr;
+    border: 0.5px solid $view-desc-border-clr;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: $view-execution-clr;
+    @include fontSize(5);
+  }
+
+  .descriptionTextError {
+    padding-top: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    color: red;
+    @include fontSize(5);
+
+    background: $view-des-text-clr;
+    border: 1px solid $view-des-border-clr;
+    border-radius: 5px;
+  }
+
+  .time {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 30px;
+    text-align: center;
+
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      @include fontSize(6);
+
+      line-height: 14px;
+
+      color: $view-para-clr;
+    }
+  }
+
+  .inputContainer {
+    .label {
+      @include fontSize(4);
+
+      line-height: 17px;
+      color: $view-lable-clr;
+      margin-bottom: 2px;
+      margin-top: 25px;
+    }
+
+    .inputBox {
+      background: $view-input-clr;
+      border-radius: 5px;
+      width: 100%;
+      height: 140px;
+    }
+
+    .textContent {
+      padding: 20px;
+    }
+  }
+
+  .logContainer {
+    .textContent {
+      // padding: 20px;
+      color: $white-color;
+    }
+  }
+}
+
+.label {
+  @include fontSize(7);
+
+  line-height: 17px;
+  color: $view-lable-clr;
+  margin-bottom: 6px;
+  margin-top: 25px;
+}
+
+.logBox {
+  background: $view-logbox-bg-clr;
+  width: 100%;
+  height: auto;
+  color: $white-color;
+  padding: 20px;
+  border-radius: 5px;
+
+  p {
+    margin-bottom: 0;
+  }
+  // padding-bottom: 150px;
+}
+
+.verticalTabs :global {
+  font-family: "Lato";
+  font-style: normal;
+  @include fontWeight(200);
+  @include fontSize(4);
+
+  line-height: 17px;
+  overflow: scroll;
+  /* identical to box height */
+
+  .ant-tabs-tab {
+    padding: 10px 0 10px 10px !important;
+  }
+
+  color: $view-logbox-bg-clr;
+  .ant-tabs-nav {
+    background: $view-tab-bg-clr;
+    width: 236px;
+    color: $view-logbox-bg-clr !important;
+
+    .ant-tabs-nav-list {
+      margin: 10px;
+      // background-color: $view-execution-clr;
+    }
+    .ant-tabs-tab {
+      background-color: transparent !important;
+      color: $view-logbox-bg-clr !important;
+
+      border: 0;
+      font-style: normal;
+      @include fontWeight(300);
+      @include fontSize(6);
+
+      line-height: 19px;
+    }
+
+    .ant-tabs-tab-active {
+      background-color: $white-color !important;
+    }
+
+    .ant-tabs-tab-btn {
+      width: 180px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.tabIcons {
+  display: inline-flex;
+  margin-left: -7px;
+  img {
+    padding: 0 5px;
+  }
+}
+
+.noTestcases {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  @include fontSize(12);
+  line-height: 17px;
+  margin: 60px 50px;
+  // background-color: red;
+}
+
+.timing {
+  text-align: center;
+  color: black !important;
+  margin-top: 10px;
+}

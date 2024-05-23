@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatabarWrapper Testing Match snapshot databarWrapper component 1`] = `
+<DocumentFragment>
+  <div
+    class="databar_wrapper_container"
+  >
+    <div
+      class="ant-image"
+      data-testid="imagediv"
+    >
+      <img
+        alt=""
+        class="ant-image-img responsive_img"
+        src=""
+      />
+    </div>
+    <div
+      class="calendar_double_line"
+    />
+  </div>
+</DocumentFragment>
+`;

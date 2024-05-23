@@ -1,0 +1,103 @@
+[
+  {
+    "question": "Why am I being forced to give an %type% in full-screen mode?",
+    "answer": "This is because an %type% administrator has enabled Proctor Mode for the %type%. You would only be able to give an %type% in full-screen mode. In case you switch tabs or open a new window, your %type% will be flagged to the %type% administrator."
+  },
+  {
+    "question": "I'm not able to see question and images? What should I do?",
+    "answer": "The above issue could occur due to slow/ missing internet connection. You can refresh your browser window by  pressing  (Ctrl/Cmd + Shift + R). If the issue is not resolved after refreshing, please contact <strong>support@doselect.com</strong>"
+  },
+  {
+    "question": "I don't understand the problem statement, what should I do?",
+    "answer": "Read the statement a few more times. If there's something in the problem statement you find misleading and think could be improved, Click on <strong>Report an issue</strong> to write your feedback."
+  },
+  {
+    "question": "My code is getting compiled in my local IDE, but throws compilation error when I run it in DoSelect's IDE?",
+    "answer": "It is possible that your local environment runs a different language version as compared to DoSelect's evaluation engine, or there might be some packages in your local environment which are not supported on DoSelect. You can scroll down to the last section of this page to refer the coding environment specs to get  an idea of DoSelect's runtime."
+  },
+  {
+    "question": "How can I check my solution in IDE?",
+    "answer": "For coding problems, you can use the following actions:<ul><li><strong>RUN CODE: </strong> Run solution against custom input to STDIN.</li><li><strong>VERIFY: </strong> Verify solution against sample test cases of the problem,if available.</li><li><strong>SUBMIT: </strong> Submit and evaluate solution against all test cases of the problem.</li> </ul>"
+  },
+  {
+    "question": "I have got “Time Limit Exceeded” error, what should I do?",
+    "answer": "We look for optimal algorithms in your solutions. Every problem has a time limit with respect to its optimal solution. If your code could not produce the required output within the set time limit, you get a “Time Limit Exceeded” error. Test cases get progressively larger, so it is common for a naive solution to pass the first few (smaller)test cases and then fail when confronted with the bigger ones."
+  },
+  {
+    "question": "How can I debug my code?",
+    "answer": "You can use the <strong>RUN CODE</strong> button to interactively run your code against a custom input. If there are errors, they will be shown in the output field, with debug information from the compiler or interpreter."
+  },
+  {
+    "question": "How can I submit my code?",
+    "answer": "When you finish the first version of your code, click on <strong>RUN CODE</strong> button to run your solution against custom inputs. Once you're confident your solution covers the entire problem, click <strong>SUBMIT</strong> button to run it against the entire set of test cases. Don't worry if you don't pass all the test cases, you can always rework your code and submit it again."
+  },
+  {
+    "question": "What happens after I submit my code?",
+    "answer": "We run your code against hidden test cases. Depending on the output your code produced, you can get the following conclusion : Evaluation status of your solution: Unsolved, Submitted, Partially accepted, Accepted, Rejected."
+  },
+  {
+    "question": "After I have submitted an answer to a question, can I come back and change my submission?",
+    "answer": "Yes, you are allowed to change your submission as many times you want to before clicking the FINISH AND SUBMIT %type%  button."
+  },
+  {
+    "question": "Why is my solution getting rejected?",
+    "answer": "This can happen due to the following reasons:<ul> <li>In the event of  test cases not getting executed and there could be multiple reasons for they not getting executed.</li><li>Incorrect logic</li> <li>Syntax errors </li> </ul>"
+  },
+  {
+    "question": "My code is passing the sample %type% cases but failing the evaluation %type% cases. What should I do?",
+    "answer": "Try to think about what could have gone wrong. Maybe your approach is wrong, perhaps you are missing some edge cases, or maybe you have a bug in your code. Maybe you're solving a different problem than the question is asking you to solve."
+  },
+  {
+    "question": "I have already taken the %type%. When will I get the results?",
+    "answer": "After you complete the %type%, the %type% administrator who conducted the %type% has access to your reports. It is their discretion to share your results with you. DoSelect will not send any %type% report to you unless and until it is automatically enabled by the %type% administrator."
+  },
+  {
+    "question": "I have appeared in the %type% & submitted response. But not sure whether it has been recorded. No confirmation was given on completion.",
+    "answer": "If you have clicked on <strong>Finish and submit</strong> button and have received a feedback form to fill, your %type% is completed and recorded."
+  },
+  {
+    "question": "How can I start taking the %type%?",
+    "answer": "<ul><li>By using the %type% invite link which you received in your email</li><li>By using the public link and the password that you have received from the %type% administrator</li></ul>"
+  },
+  {
+    "question": "What are the minimum requirements for a %type% to run properly?",
+    "answer": "<ul> <li><strong>Browser:</strong> All latest versions of Chrome/ Chromium, Mozilla Firefox, Microsoft Edge, Apple Safari.</li><li><strong>Operating System:</strong> Windows 7 and above, Linux distributions, Mac OS X 10.6 or above.</li> </ul>"
+  },
+  {
+    "question": "How can I get familiar with the %type% environment?",
+    "answer": "Try our sample %type% to get familiar with our %type% environment. This ensures that you use your time effectively when you attempt the actual %type%. Please use password: sample to proceed."
+  },
+  {
+    "question": "How many times can I attempt a sample %type%?",
+    "answer": "You can attempt the sample %type% only once."
+  },
+  {
+    "question": "Which programming language and/or framework should I be using for an %type%",
+    "answer": "The administrator / employer organisation  of the %type% has enabled a set of languages and / or frameworks that needs to be used to solve this particular %type%. Please see the list in the drop down and choose the one that you would like to use."
+  },
+  {
+    "question": "What happens to my %type% if I lose the internet connectivity while taking a %type%?",
+    "answer": "Your %type% environment would not be available without an active connection. You need to wait for the internet to resume the %type%. Please refresh your screen by pressing (Ctrl/Cmd + Shift + R).<ul> <li>Your existing solution before losing the connection will be saved.</li> <li>The %type%'s timer would keep running.</li></ul>"
+  },
+
+  {
+    "question": "I am getting 'This %type% is not live at the moment'. What should I do now?",
+    "answer": "You are seeing this message because the %type% you are trying to access might not be available currently. Please contact your %type% administrator immediately to resolve this. <p>The %type% might not be available due to any of the following reasons:</p>  <ul><li>The %type% link has expired.</li><li>You are trying to access the %type%  outside of the start and the end time.</li> <li>The %type% administrator might have deleted the %type% .</li> </ul> <p>Note: DoSelect would not entertain any %type% reset request.</p>"
+  },
+  {
+    "question": "I am getting '404 Couldn't find it...' error. What should I do now?",
+    "answer": "You are getting this error because of following reasons:<ul> <li>Your %type% link is incorrect. Please copy the link properly from “Go to %type%” button and retry.</li> <li>Your %type% or %type%  invite might be deleted. Please contact your %type% administrator.</li></ul>"
+  },
+  {
+    "question": "My screen is freezed and I am not able to navigate between the problems? What should I do?",
+    "answer": "This can primarily occur due to slow internet connection. You can resolve this by refreshing your screen using (Ctrl/Cmd + Shift + R)."
+  },
+  {
+    "question": "I'm getting 'Webcam.js (or) Waiting for webcam' error or 'AGREE AND CONTINUE' button is disabled. What should I do?",
+    "answer": "There are three possible cases here:<ul><li>Your browser has denied the permission to access the webcam. You need to allow the browser to access your webcam to continue with the %type% .</li><li>Webcam not found on your system, Please make sure that webcam is working fine on your system.</li><li>Webcam's resolution is less than or equal to 0.3 MP. Minimum supported webcam resolution is 640 * 480.</li></ul>"
+  },
+  {
+    "question": "I'm getting “System time” error or 'AGREE AND CONTINUE' button is disabled. What should I do?",
+    "answer": "Clock Error: Check that your system clock is set to the current date-time and refresh the page before you try again"
+  }
+]

@@ -1,0 +1,93 @@
+@import "../../commonStyles/app.module.scss";
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.container {
+  background-color: $clock-background;
+  border-radius: 23px;
+  width: 205px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  color: $app-dark-color;
+  &.warning_mode {
+    color: $timer-warning;
+    .clock {
+      svg {
+        path {
+          fill: $timer-warning;
+        }
+      }
+    }
+  }
+  .clock {
+    color: inherit;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .counter {
+    @include fontSize(10px);
+    @include fontWeight(300);
+    font-style: normal;
+    line-height: 24px;
+    text-align: left;
+    color: inherit;
+    margin: 0;
+  }
+  @include respond(small) {
+    width: 128px;
+    height: 25px;
+    .clock {
+      svg {
+        width: 13px;
+        height: 13px;
+      }
+    }
+    .counter {
+      @include fontSize(2px);
+      line-height: 14px;
+    }
+  }
+}
+
+.main_timerWrapper :global {
+  margin-left: -26px;
+  margin-bottom: 5px;
+  article span {
+    display: flex;
+    line-height: 0;
+    justify-content: center;
+  }
+  .timer_header {
+    @include fontSize(1);
+    line-height: 1.4;
+    color: $timer-txt;
+  }
+  .timer_content_div {
+    margin-right: 7px;
+  }
+  .timer_borderDiv {
+    width: 33px;
+    height: 30px;
+    margin-top: 2px;
+    background: $timer-content;
+    padding: 1px;
+  }
+  .inner_div {
+    font-weight: bold;
+    @include fontSize(6);
+    color: $timer-txt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31px;
+    height: 23px;
+    background: linear-gradient(180deg, $normal-btn-txt-clr 0%, $timer-bg 100%);
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.container :global {
+  .ant-spin-spinning {
+    position: fixed;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    opacity: 1;
+    left: 50%;
+  }
+  .ant-spin-dot {
+    position: relative;
+    display: inline-block;
+    @include fontSize(10);
+    width: 4em;
+    height: 6em;
+  }
+}
+.desc_type_name {
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    @include respond(small) {
+      font-size: 16px;
+    }
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    @include respond(small) {
+      font-size: 20px;
+    }
+  }
+  p {
+    color: $navbar-background;
+    margin: 2px 0px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+.type_answer {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $navbar-background;
+}
+.type_name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.container {
+  // margin-bottom: 140px;
+  background-color: $white-color;
+  padding: 0px 30px 30px 30px;
+  input {
+    border: none;
+    height: 25px;
+    @include fontSize(6);
+    color: $question-header-text-clr;
+    border-bottom: 1px solid $clock-background;
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $clock-background;
+    }
+  }
+  :focus-visible {
+    border: none;
+  }
+  @include respond(small) {
+    padding: 22px 9px 30px;
+  }
+  .question_container {
+    border: 1px solid $card-border-clr-fib;
+    border-radius: 5px;
+    background: $white-color;
+    .question {
+      padding: 60px;
+      margin: 0 auto;
+      line-height: 50px;
+      @include fontStyle(20px, 400, $black-color);
+      @include respond(small) {
+        padding: 30px 20px;
+        @include fontStyle(16px, 400, $black-color);
+      }
+    }
+    .footer_btn_div {
+      background: $fill-in-blanks-footer-clr;
+      height: 55px;
+      @include dFlex(center, flex-end);
+      padding: 0 20px;
+      border-radius: 0 0 5px 5px;
+    }
+  }
+}
+// .fib_custom_testBar {
+//   position: sticky;
+// }

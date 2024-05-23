@@ -1,0 +1,51 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+@import "../../commonStyles/button.module.scss";
+
+.container {
+  //   background-color: red;
+  background: #f8f6ff;
+  height: calc(100vh - 2px);
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+  .content {
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      height: auto;
+      width: 85%;
+    }
+
+    .textContent {
+      margin-top: -100px;
+      @include respond(max_mid) {
+        margin-top: 0;
+      }
+      @include respond(small) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 65px;
+    padding: 0px 18px !important;
+    font-size: 16px !important;
+    height: 40px;
+    column-gap: 10px;
+    @include buttonRect(210px, $button, $white-color, 14px, 700, 5px);
+  }
+}

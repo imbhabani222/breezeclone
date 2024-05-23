@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo Match snapshot logo component 1`] = `
+<DocumentFragment>
+  <span
+    class="anticon logo"
+    role="img"
+    tabindex="-1"
+    title="do select logo"
+  >
+    <svg
+      aria-hidden="true"
+      class=""
+      fill="currentColor"
+      focusable="false"
+      height="1em"
+      width="1em"
+    >
+      logo.svg
+    </svg>
+  </span>
+</DocumentFragment>
+`;

@@ -1,0 +1,147 @@
+{
+  "bash": {
+    "head": "",
+    "body": "# Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "c": {
+    "head": "",
+    "body": "#include <math.h>\n#include <stdio.h>\n#include <string.h>\n#include <stdlib.h>\n#include <assert.h>\n#include <limits.h>\n#include <stdbool.h>\n\nint main() {\n\t/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n\n\t// Note that you need to explicitly return 0 in main() function,\n\t// otherwise your solution won't get accepted\n\treturn 0;\n}",
+    "tail": ""
+  },
+  "clisp": {
+    "head": "",
+    "body": "; Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "clojure": {
+    "head": "",
+    "body": "; Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "cpp": {
+    "head": "",
+    "body": "#include <map>\n#include <set>\n#include <list>\n#include <cmath>\n#include <ctime>\n#include <deque>\n#include <queue>\n#include <stack>\n#include <string>\n#include <bitset>\n#include <cstdio>\n#include <limits>\n#include <vector>\n#include <climits>\n#include <cstring>\n#include <cstdlib>\n#include <fstream>\n#include <numeric>\n#include <sstream>\n#include <iostream>\n#include <algorithm>\n#include <unordered_map>\n\nusing namespace std;\nint main() {\n\t/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n\treturn 0;\n}",
+    "tail": ""
+  },
+  "cpp14": {
+    "head": "",
+    "body": "#include <map>\n#include <set>\n#include <list>\n#include <cmath>\n#include <ctime>\n#include <deque>\n#include <queue>\n#include <stack>\n#include <string>\n#include <bitset>\n#include <cstdio>\n#include <limits>\n#include <vector>\n#include <climits>\n#include <cstring>\n#include <cstdlib>\n#include <fstream>\n#include <numeric>\n#include <sstream>\n#include <iostream>\n#include <algorithm>\n#include <unordered_map>\n\nusing namespace std;\nint main() {\n\t/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n\treturn 0;\n}",
+    "tail": ""
+  },
+  "csharp": {
+    "head": "",
+    "body": "using System;\nusing System.Collections.Generic;\nusing System.IO;\nusing System.Linq;\n\nnamespace Source {\n\tclass Source {\n\t\tstatic void Main(string[] args) {\n\t\t\t/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n\t\t}\n  }\n}",
+    "tail": ""
+  },
+  "elixir": {
+    "head": "",
+    "body": "Code.compiler_options(ignore_module_conflict: true)\n\ndefmodule Solution do\n  def start() do\n    IO.puts \"Hello World!\"\n  end\nend\n\n# You must invoke your method at the end of this script\nSolution.start",
+    "tail": ""
+  },
+  "erlang": {
+    "head": "",
+    "body": "%% Your module should be named as 'solution' and it should export a method named 'start'\n-module(solution).\n-export([start/0]).\n\nstart() ->\n  io:format(\"Hello World~n\").",
+    "tail": ""
+  },
+  "fsharp": {
+    "head": "",
+    "body": "// Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "go": {
+    "head": "",
+    "body": "package main\nimport \"fmt\"\n\nfunc main() {\n\t//Enter your code here. Read input from STDIN. Print output to STDOUT\n}",
+    "tail": ""
+  },
+  "haskell": {
+    "head": "",
+    "body": "main :: IO ()\nmain = do\n-- Enter your code here. Read input from STDIN. Print output to STDOUT\nreturn ()",
+    "tail": ""
+  },
+  "java7": {
+    "head": "",
+    "body": "import java.io.*;\nimport java.util.*;\nimport java.text.*;\nimport java.math.*;\nimport java.util.regex.*;\n\n// Class name should be \"Source\",\n// otherwise solution won't be accepted\npublic class Source {\n\tpublic static void main(String args[] ) throws Exception {\n\t\t/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n\t}\n}",
+    "tail": ""
+  },
+  "java8": {
+    "head": "",
+    "body": "import java.io.*;\nimport java.util.*;\nimport java.text.*;\nimport java.math.*;\nimport java.util.regex.*;\n\n// Class name should be \"Source\",\n// otherwise solution won't be accepted\npublic class Source {\n\tpublic static void main(String args[] ) throws Exception {\n\t\t/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n\t}\n}",
+    "tail": ""
+  },
+  "javascript": {
+    "head": "",
+    "body": "process.stdin.resume();\nprocess.stdin.setEncoding(\"ascii\");\nvar input = \"\";\nprocess.stdin.on(\"data\", function (chunk) {\n\tinput += chunk;\n});\nprocess.stdin.on(\"end\", function () {\n\t// now we can read/parse input\n});",
+    "tail": ""
+  },
+  "julia": {
+    "head": "",
+    "body": "# Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "kotlin": {
+    "head": "",
+    "body": "import java.io.*;\nimport java.util.*\nimport java.text.*\nimport java.math.*\nimport java.util.regex.*\n\nfun main(args: Array<String>) {\n\t/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n}",
+    "tail": ""
+  },
+  "lua": {
+    "head": "",
+    "body": "-- Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "mars-assembler32": {
+    "head": "",
+    "body": ".data\nuserinput:  .space 20 # reserve space to store user's input\n\n.text\nmain:\n\n# getting user's input\nli $v0,8\nla $a0, userinput\nli $a1, 20\nsyscall\n\n# display user's input on console\nli $v0,4\nla $a0, userinput\nsyscall\n\n# code for program end\nli $v0,10\nsyscall",
+    "tail": ""
+  },
+  "objectivec": {
+    "head": "",
+    "body": "#import <objc/objc.h>\n#import <objc/Object.h>\n#import <Foundation/Foundation.h>\n\nint main ( int argc, const char *argv[] ) {\n\t// Enter your code here. Read input from STDIN. Print output to STDOUT\n\treturn 0;\n}",
+    "tail": ""
+  },
+  "perl": {
+    "head": "",
+    "body": "# Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "php": {
+    "head": "",
+    "body": "<?php\n\t/* Enter your code here. Read input from STDIN. Print output to STDOUT */\n?>",
+    "tail": ""
+  },
+  "python2": {
+    "head": "",
+    "body": "# Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "python3": {
+    "head": "",
+    "body": "# Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "r": {
+    "head": "",
+    "body": "# Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "ruby": {
+    "head": "",
+    "body": "# Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "rust": {
+    "head": "",
+    "body": "// Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  },
+  "scala": {
+    "head": "",
+    "body": "// main method in \"Source\" will be run as your answer\nobject Source extends App {\n\n\tdef main(args: Array[String]) {\n\t\t//Enter your code here. Read input from STDIN. Print output to STDOUT\n\t}\n\n}",
+    "tail": ""
+  },
+  "swift": {
+    "head": "",
+    "body": "// Enter your code here. Read input from STDIN. Print output to STDOUT",
+    "tail": ""
+  }
+}

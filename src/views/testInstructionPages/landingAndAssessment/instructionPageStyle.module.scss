@@ -1,0 +1,983 @@
+@import "../../../commonStyles/color.module.scss";
+@import "../../../commonStyles/button.module.scss";
+@import "../../../commonStyles/font.module.scss";
+@import "../../../commonStyles/media-queries.scss";
+
+$d-flex: "";
+$align-items: "";
+$justify: "";
+$align-self: "";
+.d_flex {
+  display: flex;
+}
+.btn_gray {
+  transition: none;
+  @include button(
+    254px,
+    $button !important,
+    $white-color !important,
+    20px,
+    900
+  );
+  img {
+    margin: 0px 0px 0px 10px;
+    width: 13.99px;
+    height: 15px;
+    // width: 10.99px;
+    // height: 13px;
+  }
+}
+.btn_gray:hover {
+  @include button("", $btn-hover-clr !important, $white-color, 20px, 900);
+}
+.btn_normal {
+  border: 1px solid $databar-btn-border-color !important;
+  @include button(
+    171px,
+    $white-color !important,
+    $normal-btn-txt-clr !important,
+    20px,
+    500
+  );
+  img {
+    margin: -2px 15px 0px 0px;
+    width: 13.99px;
+    height: 15px;
+    // width: 10.99px;
+    // height: 13px;
+  }
+}
+.btn_normal:focus {
+  outline: none;
+  border: 1px solid $button;
+}
+.btn_gray:focus {
+  outline: none;
+  border: none;
+}
+.btn_normal:hover {
+  @include button(171px, $white-color, $normal-btn-txt-clr, 20px, 500);
+}
+.instruction_header {
+  display: none;
+  font-style: normal;
+  @include fontWeight(500);
+  @include fontSize(20);
+  line-height: 24px;
+  color: $black-color;
+  text-align: center;
+}
+@mixin dFlex($d-flex, $align-items, $justify, $align-self) {
+  display: $d-flex;
+  align-items: $align-items;
+  justify-content: $justify;
+  align-self: $align-self;
+}
+@mixin margin($mt, $mr, $mb, $ml) {
+  margin-top: $mt;
+  margin-right: $mr;
+  margin-bottom: $mb;
+  margin-left: $ml;
+}
+.img_fluid {
+  max-width: 100%;
+  height: auto;
+}
+.parent_div {
+  background: linear-gradient(180deg, $white-color 0%, $light-white 100%);
+}
+.disabled_btn {
+  background-color: $border !important;
+  color: $disabled-txt-clr !important;
+  pointer-events: none;
+}
+.instruction_main_div_wrapper {
+  .best_wishes_png {
+    position: relative;
+    @include fontWeight(300);
+    @include fontSize(8px);
+    text-align: center;
+    color: $app-dark-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      position: absolute;
+      margin: 0;
+    }
+    @include respond(small) {
+      img {
+        height: 60px;
+      }
+    }
+  }
+  max-width: 1600px;
+  margin: auto;
+  .assessment_btn {
+    padding: 15px 0px 37px 0px;
+  }
+  @include respond(small) {
+    padding: 15px 0px 35px 0px;
+  }
+  .btn_margin {
+    @include margin(1.5rem, 0, 3rem, 0);
+  }
+  .testStatus {
+    padding: 20px;
+    img {
+      margin-right: 10px;
+      height: 25px;
+    }
+    span {
+      color: $link-clr;
+      cursor: pointer;
+      @include fontWeight(400);
+    }
+  }
+  .assessment_contents {
+    position: relative;
+    display: flex;
+    width: 100%;
+    // align-items: center;
+  }
+  .assessment_contents_text {
+    width: 56%;
+    // flex: 1;
+  }
+  .assessment_body {
+    width: 100%;
+    padding: 10px 102px 10px 102px;
+  }
+  .assessment_contents_image {
+    width: 449px;
+    height: 380px;
+    margin: auto auto 55px auto;
+    // padding-bottom: 20px;
+    @include dFlex(flex, "", center, "");
+  }
+
+  .assessment_contents_image_mobile {
+    display: none;
+  }
+  .best_wishes {
+    display: inline-block;
+  }
+  .best_wishes_mobile {
+    display: none;
+  }
+  .best_wishes_wrapper {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .assessment_contents_image {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      // width: 449px;
+      // height: 321px;
+    }
+  }
+  .best_wishes {
+    padding: 0px 220px;
+  }
+  @media (max-width: 950px) {
+    .assessment_contents_text {
+      width: 100%;
+      // flex: 1;
+    }
+    .best_wishes {
+      padding: 0px 20px;
+    }
+    .assessment_body {
+      width: 100%;
+      padding: 1px 20px;
+    }
+    .btn_gray {
+      margin: auto;
+    }
+    .best_wishes_wrapper {
+      justify-content: center;
+      display: grid;
+    }
+    .assessment_contents_image_mobile {
+      width: 224.5px;
+      height: 191px;
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+    .assessment_contents_image {
+      display: none;
+    }
+    .ellipse_text {
+      line-height: 22px;
+      width: 100%;
+    }
+  }
+  .main_header_style {
+    font-style: normal;
+    @include fontWeight(500);
+    @include fontSize(20);
+    line-height: 24px;
+    color: $black-color;
+    @include respond(medium) {
+      @include fontSize(8);
+    }
+  }
+  @include respond(medium) {
+    .best_wishes {
+    }
+    .best_wishes_mobile {
+      display: block;
+      padding-bottom: 10px;
+      margin: auto;
+    }
+  }
+  @media (max-width: 1153px) {
+    .assessment_contents_image {
+      img {
+        width: 250px;
+      }
+    }
+  }
+  .assessment_div {
+    text-align: center;
+    margin: 46px auto 60px auto;
+  }
+  .ul_style {
+    list-style: none;
+  }
+
+  .ul_style li::before {
+    content: "\2022";
+    color: $app-dark-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  .list_div {
+    display: flex;
+    margin-bottom: 22px;
+    font-style: normal;
+    font-weight: normal;
+    @include fontSize(5);
+    line-height: 30px;
+    color: $black-color;
+  }
+
+  .ellipse {
+    width: 7px;
+    height: 7px;
+    padding: 4px;
+    border-radius: 50%;
+    margin: 12px 11px 0px 0px;
+    background: $app-dark-color;
+  }
+
+  @include respond(small) {
+    .btn_gray {
+      @include button(254px, $button, $white-color, 18px, 900);
+      height: 40px;
+    }
+    .assessment_div {
+      margin: 12px auto 25px auto;
+    }
+    .ellipse {
+      margin: 7px 11px 0px 0px;
+    }
+  }
+}
+.testlanding_main_wrapper {
+  max-width: 1600px;
+  margin: auto;
+  .form_wrapper :global {
+    .ant-form-item-label > label {
+      color: $black-color;
+      @include fontSize(6);
+    }
+    .ant-checkbox-wrapper {
+      font-style: normal;
+      font-weight: normal;
+      @include fontSize(6);
+      line-height: 22px;
+      color: $black-color;
+
+      .ant-checkbox-checked .ant-checkbox-inner::after {
+        height: 12px;
+        margin: -0.5px 0px 0px 1px;
+        width: 7px;
+      }
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background: $check-color;
+      }
+      .ant-checkbox-inner {
+        background: $white-color;
+        height: 24px;
+        width: 24px;
+        border-radius: 4px;
+        border-color: $check-color;
+      }
+      .ant-checkbox-checked:hover::after {
+        border: none;
+      }
+    }
+    .ant-radio-wrapper {
+      font-style: normal;
+      font-weight: normal;
+      @include fontSize(6);
+      line-height: 22px;
+      color: $black-color;
+
+      .ant-radio-checked .ant-radio-inner::after {
+        background: $check-color;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+      }
+
+      .ant-radio-inner {
+        background: $white-color;
+        border-color: $check-color;
+        height: 20px;
+        width: 20px;
+      }
+      .ant-radio-inner:focus::after {
+        border: none;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    .ant-radio .ant-radio-checked:focus:active {
+      outline: none;
+    }
+    .ant-form-item-label
+      > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+      display: none;
+    }
+    .ant-picker {
+      border-radius: 5px;
+      border: 1px solid $input-border-clr;
+      width: 100%;
+      .ant-picker-focused {
+        box-shadow: none;
+      }
+    }
+    .ant-form-item-control-input-content {
+      display: block;
+      text-align: left;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        outline: none;
+      }
+    }
+    .ant-radio-group {
+      display: flex;
+      flex-direction: row;
+      @include respond(small) {
+        flex-direction: column;
+      }
+    }
+    .ant-checkbox-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .ant-checkbox-group-item {
+        @include dFlex(flex, flex-end, center, "");
+        margin-right: 15px;
+        .ant-checkbox + span {
+          padding: 0 14px;
+        }
+      }
+      @include respond(small) {
+        flex-direction: column;
+      }
+    }
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      border-radius: 5px;
+      border: 1px solid $input-border-clr;
+    }
+    .ant-select-arrow {
+      right: 17px;
+    }
+
+    .ant-upload.ant-upload-select-picture-card {
+      margin: 12px;
+      border: 1px solid $upload-btn-border;
+      width: 86px;
+      height: 83px;
+
+      .ant-upload {
+        background: $white-color;
+        font-style: normal;
+        font-weight: bold;
+        @include fontSize(3px);
+        line-height: 22px;
+        color: $instruction-upload-clr;
+        .anticon svg {
+          width: 14px;
+          height: 14.57px;
+        }
+      }
+    }
+  }
+  .main_container {
+    width: 100%;
+    padding: 0px 120px 189px 120px;
+  }
+  .flex_class_ellipse {
+    @include dFlex(flex, "", "", "");
+  }
+  .flex_class_img {
+    @include dFlex("", center, "", flex-end);
+  }
+  .checkbox_dflex {
+    @include dFlex(flex, center, "", "");
+  }
+  .testlanding_body_wrapper {
+    background: linear-gradient(180deg, $white-color 0%, $light-white 100%);
+  }
+  .instruction_btn_rightarrow {
+    margin: -3px 0px 0px 11px;
+  }
+  .insruction_div {
+    text-align: center;
+    padding: 46px 0px 58px 0px;
+  }
+  .url_link_clr {
+    cursor: pointer;
+    color: $link-clr;
+    &:hover {
+      color: $btn-hover-clr;
+    }
+  }
+  .sample {
+    margin: 0 3px;
+    font-style: normal;
+    @include fontWeight(300);
+    @include fontSize(4);
+    line-height: 17px;
+    color: $black-color;
+  }
+
+  .body_div {
+    position: relative;
+    padding: 0px 60px;
+    .landing_header_content {
+      @include fontWeight(200);
+      margin-top: 8px;
+    }
+  }
+
+  .common_text_header {
+    font-style: normal;
+    font-weight: normal;
+    @include fontSize(5);
+    line-height: 30px;
+    color: $black-color;
+  }
+  .ellipse {
+    width: 7px;
+    height: 7px;
+    padding: 4px;
+    border-radius: 50%;
+    margin: 12.7px 22px;
+    background: $app-dark-color;
+  }
+  .ellipseError {
+    background: $error-clr;
+  }
+  .ellipse_text {
+    line-height: 2;
+  }
+  .ellipse_text_error {
+    color: $error-clr;
+  }
+  .checkbox_main_div {
+    white-space: nowrap;
+    @include respond(medium) {
+      white-space: normal;
+    }
+  }
+  .card_style {
+    text-align: center;
+    padding: 43px 78px 55px 78px;
+    margin-top: 66px;
+    background: $white-color;
+    border: 1px solid $card-border-clr;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 12px $card-boxshadow;
+    border-radius: 10px;
+  }
+  .instruction_card_header {
+    @include fontWeight(100);
+    @include fontSize(10);
+    line-height: 24px;
+    color: $black-color;
+  }
+
+  .card_body_wrapper {
+    .instruction_nprmal_text {
+      @include dFlex(flex, "", center, "");
+      @include fontSize(6);
+      @include fontWeight(0);
+      font-style: normal;
+      line-height: 19px;
+      color: $black-color;
+      margin-bottom: 43px;
+    }
+  }
+  .instruction_card_email {
+    font-weight: bold;
+    @include fontSize(6);
+    line-height: 19px;
+    color: $black-color;
+    word-break: break-word;
+  }
+  .form_wrapper {
+    form {
+      width: 750px;
+      .upload_btn {
+        @include dFlex(flex, center, center, "");
+        text-align: justify;
+        background-color: $light-grey;
+        border: 1px dashed $upload-border;
+        border-radius: 2px;
+        height: 111px;
+        width: 100%;
+        .avatar_uploader {
+          .ant-upload {
+            width: 128px;
+            height: 128px;
+          }
+        }
+        .upload_text {
+          font-style: normal;
+          font-weight: normal;
+          @include fontSize(2);
+          line-height: 18px;
+          color: $upload-text-color;
+          padding: 0px 20px 0px 0px;
+        }
+      }
+    }
+  }
+  .checkbox_text {
+    @include fontWeight(200);
+    @include fontSize(6);
+    text-align: left;
+    color: $black-color;
+    margin: 14px 0px 16px 9px;
+  }
+  .check_box_style :global {
+    height: 0px;
+    margin-top: -30px;
+    .ant-checkbox-checked .ant-checkbox-inner::after {
+      height: 12px;
+      margin: -0.5px 0px 0px 1px;
+      width: 7px;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background: $check-color;
+    }
+    .ant-checkbox-inner {
+      background: $white-color;
+      height: 24px;
+      width: 24px;
+      border-radius: 4px;
+      border-color: $check-color;
+    }
+    .ant-checkbox-checked:hover::after {
+      border: none;
+    }
+  }
+  .form_wrapper :global {
+    .ant-form-item-explain {
+      text-align: start;
+    }
+    .ant-input {
+      @include fontSize(6);
+      border-radius: 5px;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid $input-border-clr;
+      }
+    }
+  }
+  .sample_assessment_div {
+    color: $sample-assessment-clr;
+    background: $assessment-bg;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 33px;
+    height: 50px;
+    padding-left: 20px;
+    align-items: center;
+    @include respond(small) {
+      height: 0;
+      background: none;
+    }
+  }
+  .plain_text_footer {
+    @include fontSize(4);
+    color: $black-color;
+    padding: 20px 0px 0px 20px;
+    text-align: left;
+    .footer_assessment_txt {
+      color: $black-color;
+    }
+  }
+  .lady_img_mobile {
+    display: none;
+  }
+  .btn_gray {
+    @include button(327px, $button, $white-color, 20px, 700);
+    margin-top: 30px;
+  }
+  @media only screen and (max-width: 770px) {
+    .insruction_div {
+      padding-bottom: 20px;
+    }
+    .instruction_header {
+      @include fontStyle(18px, 900, inherit);
+    }
+    .lady_img_mobile {
+      display: block;
+      margin-bottom: 20px;
+    }
+    .lady_img {
+      display: none;
+    }
+    .instruction_btn {
+      font-size: initial;
+      width: 200px;
+    }
+    .checkbox_text {
+      @include fontSize(4);
+      line-height: 20px;
+      text-align: left;
+      text-align: initial;
+    }
+    .form_wrapper {
+      padding: 0;
+    }
+  }
+
+  @include respond(max_mid) {
+    .main_container {
+      padding: 0px 30px 30px 30px;
+    }
+  }
+  @include respond(medium) {
+    .main_container {
+      padding: 0px 60px 20px 60px;
+    }
+    .card_style {
+      margin: 0;
+      padding: 30px;
+    }
+    .body_div {
+      padding: 0;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .main_container {
+      padding: 0px 15px 15px 15px;
+    }
+  }
+  @include respond(small) {
+    .main_container {
+      padding: 0px 15px 15px 15px;
+    }
+    .btn_gray {
+      @include button(284px, $button, $white-color, 18px, 900);
+      height: 40px;
+      margin: 10px auto;
+    }
+    .body_div {
+      padding: 0px;
+    }
+    .instruction_card_header {
+      @include fontStyle(18px, 500, inherit);
+    }
+    .card_style {
+      margin: 0;
+      padding: 24px;
+    }
+    .form_wrapper {
+      form {
+        width: 100%;
+      }
+    }
+  }
+}
+.parent_div_fromDoSelect {
+  background: linear-gradient(180deg, $white-color 0%, $light-white 100%);
+  padding: 40px 99px;
+  @include respond(medium) {
+    padding: 40px;
+  }
+  @include respond(small) {
+    padding: 0;
+  }
+}
+.form_doselect_wrapper {
+  max-width: 1600px;
+  margin: auto;
+  .instruction_doselect_maindiv {
+    background: $white-color;
+    box-shadow: 0px 4px 12px $doselect-div-boxshadow;
+    border-radius: 20px;
+    padding: 51px 20px;
+    .instruction_header_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .instruction_proctor {
+        position: absolute;
+        right: 0;
+        background: $status-btn-purple;
+        border-radius: 5px;
+        font-style: normal;
+        @include fontWeight(200);
+        @include fontSize(3);
+        line-height: 16px;
+        color: $white-color;
+        padding: 7px 16px;
+        margin-right: 3%;
+      }
+    }
+  }
+  .proctor_instruction {
+    @include fontWeight(200);
+    line-height: 29px;
+    margin: 0px 30px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: $assessment-bg;
+    @include respond(small) {
+      margin: 20px 20px 0px 20px;
+    }
+    p {
+      margin-left: 30px;
+      @include fontSize(8);
+    }
+    ul {
+      list-style: none;
+    }
+    li::before {
+      content: "\2022";
+      color: $app-dark-color;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+  .proctormode {
+    background: $status-btn-purple;
+    letter-spacing: 0.4px;
+    @include fontSize(2);
+    color: $white-color;
+    margin-left: auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .steps_div {
+    padding: 0 20%;
+    margin: 46px 0px 40px 0px;
+  }
+  .steps_div img,
+  svg {
+    vertical-align: unset;
+  }
+  .testStart {
+    @include respond(small) {
+      padding: 0px 20px 0px 10px;
+    }
+  }
+  .testStart .btn_normal {
+    @include respond(small) {
+      width: 100%;
+    }
+
+    margin-top: 18px;
+    @include fontSize(5);
+    @include fontWeight(200);
+  }
+  .steps_div :global {
+    .ant-steps-item-icon .ant-steps-icon {
+      position: relative;
+      vertical-align: bottom;
+      @include fontSize(10);
+      line-height: 2.3;
+    }
+    .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon {
+      background: $steps-clr;
+      border: 2px solid $ant-steps-bg;
+      box-sizing: border-box;
+    }
+    .ant-steps-item-finish .ant-steps-item-icon {
+      background: $steps-clr;
+      border: 2px solid $ant-steps-bg;
+      box-sizing: border-box;
+    }
+    .anticon svg {
+      color: $white-color;
+    }
+    .ant-steps-item-finish
+      > .ant-steps-item-container
+      > .ant-steps-item-content
+      > .ant-steps-item-title::after {
+      background-color: $ant-title-clr;
+    }
+    .ant-steps-item-title::after {
+      background-color: $ant-title-clr !important;
+    }
+    .ant-steps-item-icon {
+      width: 50px;
+      height: 50px;
+    }
+    .ant-steps-item-title {
+      font-style: normal;
+      font-weight: bold;
+      @include fontSize(10);
+      line-height: 50px;
+    }
+    .ant-steps-item-title::after {
+      top: 26px;
+    }
+  }
+  .steps_sub_heaader_div {
+    text-align: center;
+    margin: 30px;
+    font-weight: bold;
+    @include fontSize(10);
+    line-height: 24px;
+    color: $normal-btn-txt-clr;
+    background: $assessment-bg;
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 13px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    @include respond(small) {
+      @include fontSize(6);
+    }
+  }
+  .steps_btn_div {
+    margin: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .steps_content {
+    padding: 0px 30px;
+    svg {
+      color: $grey-color;
+    }
+  }
+  .line {
+    height: 1px;
+    margin: 30px 30px 18px 30px;
+    background: $line-bg;
+    @include respond(small) {
+      margin: 30px 25px;
+    }
+  }
+  .common_div :global {
+    padding: 49px 99px;
+    background: linear-gradient(180deg, $white-color 0%, $light-white 100%);
+    @media only screen and (max-width: 770px) {
+      .instruction_header {
+        @include fontStyle(18px, 900, inherit);
+      }
+    }
+  }
+  @media only screen and (max-width: 1158px) {
+    .steps_div {
+      padding: 0 20%;
+      margin: 46px 0px 0px 0px;
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    .steps_div {
+      padding: 0 2%;
+      // margin: 46px 0px 0px 0px;
+    }
+    .instruction_header {
+      text-align: justify;
+      margin: 0 auto;
+      width: 90%;
+      height: 50px;
+      background: $assessment-bg;
+      padding: 14px;
+      border-radius: 5px;
+      display: block;
+      @include fontStyle(18px, 900, inherit);
+      margin-bottom: 20px;
+    }
+    .common_div {
+      padding: 10px;
+    }
+    .instruction_doselect_maindiv {
+      padding: 20px 0px;
+      .instruction_header_container {
+        .instruction_proctor {
+          right: 7%;
+          top: 15%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 1122px) {
+    .common_div {
+      padding: 49px 10px;
+    }
+  }
+  @include respond(small) {
+    .btn_gray {
+      @include button(166px, $button, $white-color, 15px, 600);
+      height: 40px;
+    }
+    .btn_normal {
+      @include button(130px, $button, $white-color, 16px, 500);
+      height: 40px;
+    }
+    .steps_content {
+      margin-top: 14px;
+      padding: 0px 20px;
+    }
+    .instruction_doselect_maindiv {
+      box-shadow: none;
+    }
+    .steps_sub_heaader_div {
+      margin: 20px;
+    }
+    .common_div {
+      padding: 0px 10px;
+    }
+  }
+  @include respond(medium) {
+    .steps_div {
+      display: none;
+    }
+  }
+  @include respond(large) {
+    .steps_div {
+      padding: 0 10% 4% 10%;
+    }
+  }
+}

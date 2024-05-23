@@ -1,0 +1,353 @@
+@import "../../../commonStyles/color.module.scss";
+@import "../../../commonStyles/button.module.scss";
+@import "../../../commonStyles/font.module.scss";
+@import "../../../commonStyles/media-queries.scss";
+@import "../landingAndAssessment/instructionPageStyle.module.scss";
+
+.container :global {
+  .ant-spin-spinning {
+    position: fixed;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    opacity: 1;
+    left: 50%;
+  }
+  .ant-spin-dot {
+    position: relative;
+    display: inline-block;
+    @include fontSize(10);
+    width: 4em;
+    height: 6em;
+  }
+  .ant-spin.ant-spin-show-text .ant-spin-text {
+    display: block;
+    position: relative;
+    left: 47px;
+    top: -54px;
+  }
+}
+
+.test_questions_wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  padding: 30px 102px 30px 102px;
+
+  .action_flex {
+    display: flex;
+  }
+  .questions_desc {
+    font-style: normal;
+    @include fontWeight(300);
+    @include fontSize(6);
+    line-height: 24px;
+    color: $white-color;
+  }
+  .main_div_clipath {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background: $button;
+    padding: 10px 70px 10px 20px;
+    margin-bottom: 10px;
+    @include respond(small) {
+      height: 34px;
+    }
+  }
+  .triangle_div {
+    position: absolute;
+    background: $white-color;
+    height: 30px;
+    width: 30px;
+    right: -15px;
+    transform: rotate(45deg);
+  }
+  .problem_name {
+    color: $normal-btn-txt-clr;
+    &:hover {
+      @include fontSize(8);
+      line-height: 24px;
+      color: $action-text-clr;
+      text-decoration: none;
+    }
+  }
+  span {
+    @include fontSize(8);
+    line-height: 24px;
+    @include respond(small) {
+      @include fontSize(3);
+    }
+  }
+  .status_btn_gray {
+    @include statusBtn($status-btn-gray);
+  }
+  .status_btn_green {
+    @include statusBtn($status-btn-green);
+  }
+  .status_btn_red {
+    @include statusBtn($status-btn-red);
+  }
+  .status_btn_purple {
+    @include statusBtn($status-btn-purple);
+  }
+  .status_icons {
+    position: absolute;
+    left: 5px;
+  }
+  .status_txt_class {
+    margin-left: 10px;
+  }
+  .status_action_txt {
+    color: $action-text-clr;
+    font-weight: bold;
+    @include fontSize(6);
+    cursor: pointer;
+    &:hover {
+      color: $action-hover;
+    }
+  }
+  .status_width {
+    .res_img {
+      display: none;
+    }
+  }
+  @include respond(small) {
+    .action_class {
+      text-align: center;
+    }
+    .action_flex {
+      height: 18px;
+      width: 18px;
+      align-items: center;
+      margin-left: -13px;
+    }
+    .status_action_txt {
+      @include fontSize(1);
+    }
+    .status_width {
+      text-align: center;
+      div {
+        display: none;
+      }
+      .res_img {
+        display: inline-block;
+      }
+    }
+  }
+  .status_btn_gray,
+  .status_btn_green,
+  .status_btn_red,
+  .status_btn_purple {
+    position: relative;
+    justify-content: center;
+    @include respond(small) {
+      height: 18px;
+      @include fontSize(0);
+      display: inline-block;
+      width: 81px;
+      .status_icons {
+        height: 10px;
+        width: 10px;
+        margin: 0px 3.5px;
+      }
+    }
+  }
+  .action_icon {
+    margin-right: 13px;
+  }
+  .back_to_instr_btn {
+    border: 1px solid $databar-btn-border-color !important;
+    // display: flex;
+    align-items: center;
+    @include button(272px, $white-color, $normal-btn-txt-clr, 20px, 500);
+    img {
+      width: 13.66px;
+      height: 13.66px;
+      margin: 1.5px 15.54px 0px 0px;
+    }
+  }
+  .finish_btn {
+    @include button(368px, $button, $white-color, 20px, 900);
+    img {
+      width: 13.66px;
+      height: 13.66px;
+      margin: 0px 0px 0px 15.54px;
+    }
+    &:hover {
+      background-color: $btn-hover-clr;
+    }
+  }
+  .submit_next {
+    @include button(431px, $button, $white-color, 20px, 900);
+    img {
+      margin: -2px 0px 0px 19px;
+    }
+    &:hover {
+      background-color: $btn-hover-clr;
+    }
+  }
+  .questions_btn_div {
+    text-align: center;
+    .questions_btn_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      @include respond(medium) {
+        flex-direction: column;
+      }
+    }
+  }
+  .styles.action_flex {
+    display: flex;
+  }
+  .loop_btn {
+    padding: 20px 25px 30px;
+    // padding-bottom: 30px;
+  }
+  .disable_test {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  .main_table_header :global {
+    .table {
+      width: 0;
+    }
+    .ant-table-tbody > tr > td,
+    .ant-table-cell {
+      @include respond(small) {
+        padding: 11px;
+      }
+    }
+    .ant-table-content {
+      box-shadow: 0px 4px 12px $doselect-div-boxshadow;
+    }
+    .ant-table-row {
+      height: 80px;
+    }
+    @include respond(small) {
+      .ant-table-row {
+        height: 40px;
+      }
+    }
+    .ant-table-thead > tr > th {
+      background-color: $table-header;
+      @include fontStyle(16px, bold, $normal-btn-txt-clr);
+      @include respond(small) {
+        @include fontSize(4);
+      }
+    }
+    .ant-table-thead > tr > th:nth-child(1) {
+      text-align: center;
+    }
+    .ant-table-row td:nth-child(1) {
+      @include fontStyle(18px, bold, $normal-btn-txt-clr);
+      text-align: center;
+      @include respond(small) {
+        @include fontSize(4);
+        padding: 0px 18px;
+      }
+    }
+
+    .ant-table-row td {
+      @include fontStyle(15px, normal, $normal-btn-txt-clr);
+      @include respond(small) {
+        @include fontSize(4);
+      }
+    }
+  }
+  @media (max-width: 637px) {
+    .submit_next {
+      @include button(100%, $button, $white-color, 16px, 900);
+    }
+    .back_to_instr_btn {
+      @include button(100%, $white-color, $normal-btn-txt-clr, 16px, 500);
+    }
+    .finish_btn {
+      @include button(100%, $button, $white-color, 16px, 900);
+    }
+  }
+  @include respond(medium) {
+    padding: 50px 20px;
+    .back_to_instr_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include button(100%, $white-color, $normal-btn-txt-clr, 16px, 500);
+    }
+    .finish_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include button(100%, $button, $white-color, 16px, 900);
+    }
+  }
+  @include respond(small) {
+    padding: 30px 20px;
+  }
+  .hide_col {
+    @include respond(small) {
+      display: none;
+    }
+  }
+  @include respond(small) {
+    .submit_next {
+      width: 255px;
+      height: 40px;
+      @include fontSize(5);
+      img {
+        margin: -2px 0px 0px 10px;
+      }
+    }
+    .action_icon {
+      margin-right: 4px;
+      height: 14px;
+      width: 14px;
+    }
+    table {
+      width: 0 !important;
+    }
+    .finish_btn,
+    .back_to_instr_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 18px;
+      height: 40px;
+      // margin: auto;
+      // height: 40px;
+      @include fontSize(5);
+    }
+  }
+}
+.parent_div :global {
+  .ant-spin-spinning {
+    position: fixed;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    opacity: 1;
+    left: 50%;
+  }
+  .ant-spin-dot {
+    position: relative;
+    display: inline-block;
+    @include fontSize(10);
+    width: 4em;
+    height: 6em;
+  }
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.test_questions_wrapper :global {
+  .ant-modal-body {
+    overflow: hidden;
+  }
+}

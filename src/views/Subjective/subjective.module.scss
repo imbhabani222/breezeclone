@@ -1,0 +1,317 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.container :global {
+  .ant-spin-spinning {
+    position: fixed;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    opacity: 1;
+    left: 50%;
+  }
+  .ant-spin-dot {
+    position: relative;
+    display: inline-block;
+    @include fontSize(10);
+    width: 4em;
+    height: 6em;
+  }
+}
+
+.container :global {
+  position: fixed;
+  width: -webkit-fill-available;
+
+  @include respond(small) {
+    position: relative;
+    width: -webkit-fill-available;
+  }
+
+  @include respond(max_mid) {
+    position: relative;
+    width: -webkit-fill-available;
+  }
+  .ant-upload-list {
+    position: absolute;
+    top: 295px;
+    left: 20px;
+    color: $normal-btn-txt-clr;
+    display: none;
+    flex-wrap: wrap;
+
+    @include respond(small) {
+      top: 340px;
+      left: 3px;
+    }
+  }
+
+  .ant-upload-list-picture .ant-upload-list-item,
+  .ant-upload-list-picture-card .ant-upload-list-item {
+    position: relative;
+    height: 35px;
+    padding: 16px 0;
+    margin: 5px;
+    border: 1px solid $subjective-upload-border-clr;
+    border-radius: 2px;
+  }
+  .ant-upload-list-picture .ant-upload-list-item-thumbnail .anticon,
+  .ant-upload-list-picture-card .ant-upload-list-item-thumbnail .anticon {
+    @include fontSize(12);
+  }
+}
+
+.container {
+  .split_flex {
+    height: 100vh;
+    display: flex;
+    @include respond(max_mid) {
+      display: contents !important;
+    }
+  }
+  background-color: $white-color;
+  @include respond(small) {
+    .splitpaneCustom {
+      // background-color: red;
+      display: block;
+    }
+    padding: 0px;
+  }
+}
+.question_container {
+  background: $subjective-ques-bg-clr;
+  min-width: 30%;
+
+  width: calc(32.7744% - 5px);
+  height: calc(100vh - 188px);
+
+  // margin-bottom: 120px;
+  // height: 100vh;
+  position: sticky;
+  // top: 40px;
+  padding: 30px;
+  overflow: auto;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .question_type {
+    display: flex;
+    margin-bottom: 20px;
+    span {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 600;
+      margin-left: 7px;
+    }
+  }
+
+  @include respond(small) {
+  }
+  .type {
+    display: -webkit-inline-box;
+    p {
+      color: $black-color;
+      @include fontSize(6);
+      @include fontWeight(300);
+      margin-left: 10px;
+    }
+  }
+  @include respond(max_mid) {
+    width: 100% !important;
+    position: static;
+    height: unset;
+  }
+}
+
+.editor_left_content {
+  background: $subjective-ques-bg-clr;
+  max-width: 100%;
+  height: 100vh;
+}
+.editor_right_content {
+  max-width: 100%;
+
+  background-color: $white-color;
+}
+
+.editor_container {
+  padding: 26px 30px;
+  // margin-top: -120px;
+  @include respond(small) {
+    padding: 26px 8px;
+  }
+  .quill_container {
+    // margin: 20px 0;
+  }
+  .quill_editor {
+    max-height: 330px;
+    overflow: scroll;
+    @include respond(max_mid) {
+      margin-right: -8px;
+    }
+    @include respond(small) {
+      margin-right: -8px;
+    }
+  }
+  .quill_editor > * div {
+    min-height: 110px;
+    background: white;
+  }
+
+  .attachment {
+    @include fontSize(6);
+    color: $question-header-text-clr;
+    font-style: normal;
+    margin-bottom: 10px;
+    @include fontWeight(300);
+    font-style: normal;
+    color: $normal-btn-txt-clr;
+    @include respond(small) {
+      @include fontSize(4);
+    }
+    margin: 0 0 32px 0;
+  }
+  .attachment_wrapper {
+    margin-bottom: 50px;
+    // display: flex;
+    a {
+      font-weight: 400;
+      @include fontSize(3);
+      line-height: 15px;
+
+      color: $normal-btn-txt-clr;
+    }
+    .inner_attachment_div {
+      height: 35px;
+      background: $white-color;
+      display: flex;
+      box-sizing: border-box;
+      border-radius: 3px;
+      border: 1px solid $subjective-upload-border-clr;
+      padding: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .attachment_closeIcon {
+      margin-left: auto;
+    }
+    img {
+      cursor: pointer;
+      padding: 0px 10px;
+    }
+  }
+}
+.container_row {
+  height: 100vh;
+  @media (max-width: 812px) {
+    height: initial;
+  }
+}
+.footer_actions {
+  position: sticky;
+  margin-top: auto;
+  bottom: 11px;
+  right: 0;
+  height: 50px;
+  background-color: $result-tab-color;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+  .upload_btn button {
+    border: none;
+    margin-top: 13px;
+    color: $white-color;
+    @include fontSize(6);
+    @include fontWeight(300);
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .save_btn {
+    border: none;
+    background-color: $button;
+    margin-left: 1px;
+  }
+
+  .save_btn:hover {
+    background-color: $button !important;
+  }
+
+  @media (max-width: 812px) {
+    position: sticky;
+    //  position: absolute;
+    bottom: 0 !important;
+    // width: 100%;
+  }
+  @include respond(max_mid) {
+    bottom: 70px;
+  }
+}
+::-webkit-scrollbar {
+}
+.footer_actions > * {
+  height: 100%;
+  padding: 0 25px;
+  @include fontStyle(16px, 700, $white-color);
+  @include respond(small) {
+    @include fontSize(4);
+  }
+}
+.upload_btn_wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  button {
+    padding: 8px 20px;
+    border-radius: 8px;
+  }
+  .input_file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  input[type="file"] {
+    opacity: 0;
+    cursor: pointer;
+    width: 80px;
+    height: 54px;
+    font-size: 0;
+    position: absolute;
+  }
+}
+
+.editor_wrapper {
+  position: sticky;
+  height: calc(100vh - 170px);
+  overflow: auto;
+  @include respond(max_mid) {
+    width: 100% !important;
+    height: unset;
+  }
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  width: 100%;
+}
+.container :global {
+  .gutter {
+    background-position: 50% !important;
+  }
+  .gutter.gutter-horizontal {
+    cursor: ew-resize;
+    background: $coding-vertical-clr;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/expand.svg");
+  }
+}

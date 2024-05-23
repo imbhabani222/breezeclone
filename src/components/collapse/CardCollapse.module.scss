@@ -1,0 +1,82 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.card {
+  width: 100%;
+  margin: 20px 0;
+  background: $white-color;
+  border: 1.5px solid $card-border;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px rgba(149, 144, 144, 0.25);
+  border-radius: 5px;
+  &.panel:has(.ant-collapse-item-active) {
+    .question {
+      color: red;
+    }
+  }
+  .panel {
+    padding: 18px 15px;
+    .answer {
+      @include fontSize(5px);
+      @include fontWeight(0);
+      line-height: 24px;
+      text-align: left;
+      @include respond(medium) {
+        @include fontSize(3px);
+      }
+    }
+  }
+}
+@mixin responsive() {
+  @include fontSize(6px);
+  @include fontWeight(300);
+  line-height: 24px;
+  text-align: left;
+  color: $card-header-color;
+
+  padding: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  @include respond(medium) {
+    @include fontSize(4px);
+  }
+}
+@at-root :global {
+  .ant-collapse {
+    .ant-collapse-item {
+      &.ant-collapse-item-active {
+        .ant-collapse-header {
+          color: $card-header-active-color;
+          .ant-collapse-arrow svg {
+            transform: rotate(268deg) !important;
+          }
+        }
+      }
+      .ant-collapse-header {
+        @include responsive();
+        .ant-collapse-arrow {
+          position: relative;
+          top: unset;
+          right: 0;
+          left: auto;
+          height: 8.25px;
+          svg {
+            width: 18px;
+            height: 18px;
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .ant-collapse-content {
+        .ant-collapse-content-box {
+          padding: 0;
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}

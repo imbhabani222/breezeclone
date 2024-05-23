@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Match snapshot footer component 1`] = `
+<DocumentFragment>
+  <footer
+    class="footercl"
+    title="Doselect. All rights reserved"
+  >
+    <div
+      class="ant-typography footer_text"
+    >
+      © 2022 Doselect. All rights reserved
+    </div>
+  </footer>
+</DocumentFragment>
+`;

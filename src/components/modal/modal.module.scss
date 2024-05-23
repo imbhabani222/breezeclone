@@ -1,0 +1,127 @@
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/media-queries.scss";
+@import "../../commonStyles/button.module.scss";
+.highlight {
+  color: $modal-header-txt;
+  @include fontWeight(200);
+}
+
+.modal_text_div {
+  padding: 10px;
+}
+.modal_head {
+  background: $modal-head;
+  height: 20px;
+  margin-left: -20px;
+  margin-top: -24px;
+  position: absolute;
+  margin-top: -24px;
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.modal_body_text {
+  @include fontStyle(16px, normal, $modal-body-txt);
+}
+.divider {
+  margin: 0;
+  min-width: 92%;
+}
+.xicon {
+  float: right;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+.xicon span svg {
+  height: 20px;
+  width: 20px;
+}
+.modalContent {
+  div {
+    text-align: center;
+    height: 1px;
+    @include fontSize(8);
+  }
+  img {
+    height: 50px;
+  }
+  padding: 0px;
+  span {
+    row-gap: 45px;
+    flex-direction: column;
+    display: flex;
+    h1 {
+      @include fontStyle(24px, 900, $modal-header-txt);
+      text-align: center;
+      padding: 14px 0px 5px 0px;
+    }
+    p {
+      @include fontSize(6);
+      @include fontWeight(0);
+      line-height: 24px;
+      strong {
+        color: $modal-header-txt;
+      }
+    }
+  }
+}
+.modal_btn_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  align-content: center;
+  padding: 30px 0 20px;
+  column-gap: 10px;
+  @include respond(small) {
+    flex-direction: column;
+  }
+}
+.btn {
+  margin: 0;
+  &.modal_cancel_btn {
+    @include button(126px, $white-color, $cancel-btn-txt, 16px, 500);
+    height: 40px;
+    &:hover {
+      background: $white-color;
+      color: $cancel-btn-txt;
+    }
+    &:focus {
+      background: $button;
+      color: $cancel-btn-txt;
+    }
+    @include respond(small) {
+      width: 296px;
+      height: 40px;
+    }
+  }
+  &.modal_submit_btn {
+    @include button(282px, $button, $white-color, 16px, bold);
+    height: 40px;
+    &:hover {
+      background: $button;
+      color: $white-color;
+    }
+    &:focus {
+      background: $button;
+      color: $white-color;
+    }
+  }
+}
+.modal_class :global {
+  .ant-btn-outline {
+    border: 1px solid $databar-btn-border-color !important;
+  }
+  .ant-divider-horizontal {
+    background: $divider-clr;
+  }
+  .ant-modal-body {
+    overflow: hidden;
+    padding: 20px;
+  }
+  .ant-modal-content {
+    border-radius: 6px;
+  }
+}

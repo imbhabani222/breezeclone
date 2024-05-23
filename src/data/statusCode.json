@@ -1,0 +1,30 @@
+[
+  {
+    "status": "AC",
+    "description": "Your code executed without any issues during an interactive run."
+  },
+  {
+    "status": "AC/OK",
+    "description": "Accepted. This status is shown if your solution gets accepted for  a particular testcase."
+  },
+  {
+    "status": "NZEC",
+    "description": "Runtime error. This can be caused due to various reasons like improper handling of input, segmentation fault, or anything that might cause an unhandled expection. For instance, if you forgot to return 0 in main function for C or C++."
+  },
+  {
+    "status": "TLE",
+    "description": "Time limit exceeded. This means that your program was not able to exit within the assigned timelimit."
+  },
+  {
+    "status": "CE",
+    "description": "Compilation error. Your program did not pass the compile phase."
+  },
+  {
+    "status": "CTLE",
+    "description": "Compilation time limit exceeded. This occurs if your code takes too much time to compile. Note that if you feel this status occured incorrectly, you can try re-submitting your code."
+  },
+  {
+    "status": "NC",
+    "description": "Not Correct. This status is shown if your solution fails for a  particular testcase."
+  }
+]

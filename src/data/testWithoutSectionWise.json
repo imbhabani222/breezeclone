@@ -1,0 +1,62 @@
+{
+  "name": "Section 1",
+  "status": "",
+  "problems": [
+    {
+      "id": 115874,
+      "name": "Sector",
+      "slug": "xe6n9",
+      "problem_type": "FIB",
+      "solution": null
+    },
+    {
+      "id": 115872,
+      "name": "Lifestyle",
+      "slug": "6on3b",
+      "problem_type": "FIB",
+      "solution": null
+    },
+    {
+      "id": 320621,
+      "name": "Dot product M.N",
+      "slug": "vny8x",
+      "problem_type": "MCQ",
+      "solution": null
+    },
+    {
+      "id": 320602,
+      "name": "Sum of the Squares",
+      "slug": "x0nry",
+      "problem_type": "MCQ",
+      "solution": null
+    },
+    {
+      "id": 320585,
+      "name": "Basic Implementations",
+      "slug": "5g43x",
+      "problem_type": "MCQ",
+      "solution": null
+    },
+    {
+      "id": 209860,
+      "name": "Information is Power!",
+      "slug": "q5dld",
+      "problem_type": "SUB",
+      "solution": null
+    },
+    {
+      "id": 208522,
+      "name": "Binary Search",
+      "slug": "yn9wa",
+      "problem_type": "SUB",
+      "solution": null
+    },
+    {
+      "id": 39951,
+      "name": "Design a microservice",
+      "slug": "8ge6l",
+      "problem_type": "SUB",
+      "solution": null
+    }
+  ]
+}

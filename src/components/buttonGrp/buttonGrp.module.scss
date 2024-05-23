@@ -1,0 +1,79 @@
+@import "../../commonStyles/button.module.scss";
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.btnGrp :global {
+  .ant-btn[disabled] {
+    opacity: 0.4 !important;
+  }
+}
+.btnGrp {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  @include respond(small) {
+    // display: block;
+    text-align: center;
+    // flex-direction: column;
+  }
+
+  .btn {
+    &.outlineBtn {
+      @include button(126px, $white-color, $cancel-btn-txt, 16px, 500);
+      height: 40px;
+      &:hover {
+        background: $white-color;
+        color: $cancel-btn-txt;
+      }
+      &:focus {
+        background: none;
+        color: $cancel-btn-txt;
+      }
+      @include respond(small) {
+        width: 296px;
+        height: 40px;
+      }
+    }
+    &.filledBtn {
+      @include button(282px, $button, $white-color, 16px, bold);
+      height: 40px;
+      &:hover {
+        background: $button;
+        color: $white-color;
+      }
+      &:focus {
+        background: $button;
+        color: $white-color;
+      }
+      @include respond(small) {
+        width: 299px;
+      }
+    }
+    &.rectFilledBtn {
+      padding: 0px 30px !important;
+      font-size: 16px !important;
+      @include buttonRect(100px, $button, $white-color, 14px, 700, 5px);
+      height: 40px;
+      @include dFlex(center, center);
+      column-gap: 10px;
+      @include respond(small) {
+        padding: 0px 20px !important;
+      }
+    }
+    &.rectOutlineBtn {
+      @include buttonRect(
+        100px,
+        $white-color,
+        $normal-btn-txt-clr,
+        14px,
+        400,
+        5px
+      );
+      height: 40px;
+      border: 1px solid $normal-btn-txt-clr;
+      @include dFlex(center, center);
+      column-gap: 10px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar Testing snapshot button component 1`] = `
+<DocumentFragment>
+  <div
+    class="progressbar_col"
+  >
+    <div
+      class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default progress"
+    >
+      <div
+        class="ant-progress-outer"
+      >
+        <div
+          class="ant-progress-inner"
+        >
+          <div
+            class="ant-progress-bg"
+            style="width: 0%; height: 10px;"
+          />
+        </div>
+      </div>
+    </div>
+    <span
+      class="ant-typography progressbar_text"
+      title="%completed%/%total% Questions attempted"
+    >
+      00/00 Questions attempted
+    </span>
+  </div>
+</DocumentFragment>
+`;

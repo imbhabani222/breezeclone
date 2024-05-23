@@ -1,0 +1,60 @@
+@import "./color.module.scss";
+
+$width: 0px;
+$bg-clr: white;
+$txt-clr: white;
+$font-size: 0px;
+$font-weight: 100;
+
+@mixin statusBtn($status-btn-gray) {
+  height: 25px;
+  background: $status-btn-gray;
+  border-radius: 70px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  color: $white-color;
+  border: none;
+  width: 123px;
+  display: flex;
+  align-items: center;
+}
+@mixin button($width, $bg-clr, $txt-clr, $font-size, $font-weight) {
+  width: fit-content;
+  min-width: $width;
+  padding: 0 25px;
+  background: $bg-clr;
+  box-sizing: border-box;
+  border-radius: 40px;
+  color: $txt-clr;
+  height: 50px;
+  border: none;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  margin: 10px 10px 0px 0px;
+}
+
+@mixin buttonRect(
+  $width,
+  $bg-clr,
+  $txt-clr,
+  $font-size,
+  $font-weight,
+  $border-radius
+) {
+  width: fit-content;
+  min-width: $width;
+  padding: 0 20px;
+  background: $bg-clr;
+  border: 1px solid $button;
+  box-sizing: border-box;
+  border-radius: $border-radius;
+  color: $txt-clr;
+  height: 50px;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  .ant-btn[disabled] {
+    opacity: 0.4 !important;
+  }
+}

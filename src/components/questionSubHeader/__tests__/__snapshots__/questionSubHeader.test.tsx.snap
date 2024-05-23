@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionHeader Testing Match snapshot questionSubHeader component 1`] = `
+<DocumentFragment>
+  <div
+    class="question_type"
+  >
+    <div
+      class="image"
+    >
+      <img
+        alt="Fill In the Blanks"
+        src="list_item.svg"
+      />
+      <h3>
+        Fill In the Blanks
+      </h3>
+    </div>
+    <div>
+      <div
+        class="btnGrp header_btn_div"
+      >
+        <button
+          class="ant-btn ant-btn-rectFilled btn rectFilledBtn"
+          data-testid="button-up-REPORT AN ISSUE"
+          type="button"
+        >
+          <img
+            alt="beforeIcon"
+            src="beforeIcon"
+          />
+          <span>
+            REPORT AN ISSUE
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="question_header"
+  >
+    <div
+      class="header_content"
+    >
+      <div
+        class="ant-typography content_title"
+      >
+        Answer
+      </div>
+      <div
+        class="ant-typography content_text"
+      >
+        Please choose correct answer.
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

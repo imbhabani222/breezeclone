@@ -1,0 +1,76 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+
+.question_type {
+  @include dFlex(center, space-between);
+  flex-wrap: wrap;
+  // margin: 8px 0;
+  padding: 20px 0;
+  @include respond(small) {
+    background: $question-header-background;
+    border: 1px solid $question-header-border;
+    justify-content: start;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 23px 13px;
+  }
+  .image {
+    display: flex;
+    @include respond(small) {
+      margin-bottom: 20px;
+      width: auto;
+    }
+  }
+  h3 {
+    @include fontStyle(16px, 700, $normal-btn-txt-clr);
+    padding-top: 8px;
+    margin-left: 10px;
+    line-height: 19px;
+  }
+}
+
+.question_header {
+  @include respond(medium) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 15px;
+  }
+  @include respond(small) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px;
+  }
+  #fib_btn {
+    .header_btn_div button {
+      @include dFlex(center, center);
+      flex-direction: row;
+      column-gap: 10px;
+    }
+  }
+
+  .content_title {
+    @include fontWeight(200);
+    @include fontSize(6);
+    color: $normal-btn-txt-clr;
+    margin-bottom: 10px;
+  }
+}
+
+.content_text {
+  @include fontSize(6);
+  color: #5c5e7a;
+  margin-bottom: 10px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: $normal-btn-txt-clr;
+  @include respond(small) {
+    @include fontSize(4);
+  }
+}

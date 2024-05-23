@@ -1,0 +1,194 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+.container :global {
+  .ant-spin-spinning {
+    position: fixed;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    opacity: 1;
+    left: 50%;
+  }
+  .ant-spin-dot {
+    position: relative;
+    display: inline-block;
+    @include fontSize(10);
+    width: 4em;
+    height: 6em;
+  }
+}
+.container {
+  margin-bottom: 140px;
+  background-color: $white-color;
+  padding: 0px 30px;
+  @include respond(small) {
+    padding: 0px 10px;
+    margin-bottom: 30px;
+  }
+  @include respond(medium) {
+    margin-bottom: 30px;
+  }
+  .footer_btn_div {
+    background: $fill-in-blanks-footer-clr;
+    height: 55px;
+    @include dFlex(center, flex-end);
+    padding: 0 20px;
+  }
+  .mcq_container :global {
+    h2 {
+      font-style: normal;
+      @include fontWeight(300);
+      @include fontSize(6);
+      line-height: 19px;
+    }
+    .ql-syntax {
+      padding: 20px;
+      color: $ql-syntax;
+      background: $modal-body-txt;
+      @include respond(small) {
+        display: inline-grid;
+      }
+      @include respond(medium) {
+        display: inline-grid;
+      }
+    }
+    @include respond(small) {
+      img {
+        width: -webkit-fill-available;
+      }
+    }
+    @include respond(medium) {
+      img {
+        width: -webkit-fill-available;
+      }
+    }
+    h3 {
+      @include fontStyle(16px, 700, $black-color);
+      line-height: 19px;
+    }
+    .ant-typography {
+      @include fontStyle(15px, 400, $black-color);
+      margin: 20px 0;
+    }
+  }
+  .selectLabel {
+    line-height: 22px;
+    margin-bottom: 10px;
+    @include fontWeight(300);
+    font-style: normal;
+    color: $normal-btn-txt-clr;
+    @include fontSize(8);
+    @include respond(small) {
+      @include fontSize(4);
+    }
+  }
+  .option_content {
+    // padding: 15px 20px;
+    @include respond(small) {
+      padding: 0;
+    }
+  }
+  .mcq_option :global {
+    border: 1px solid #c3c4d2;
+    border-radius: 5px;
+    text-align: left;
+    @include respond(small) {
+      // border: none;
+      // padding: 10px;
+    }
+    .ant-space {
+      // width: 500px;
+      @include respond(medium) {
+        // width: 400px;
+      }
+      @include respond(small) {
+        // width: 350px;
+        margin: 10px;
+      }
+      .ant-space-item {
+        background: $mcq-opt-bac-clr;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: left;
+        margin: 5px 0;
+        min-width: 393px;
+        margin: 20px;
+        // width: fit-content;
+        @include respond(small) {
+          margin: 10px;
+          min-width: -webkit-fill-available;
+        }
+        @include respond(medium) {
+          margin: 10px;
+          // min-width: -webkit-fill-available;
+        }
+      }
+      .ant-radio-wrapper :global {
+        display: flex;
+        align-items: center;
+        .ant-radio-checked {
+          .ant-radio-inner {
+            border-color: $check-color;
+            outline: none;
+          }
+        }
+      }
+      // }
+      .ant-radio-wrapper {
+        font-style: normal;
+        font-weight: normal;
+        @include fontSize(6);
+        line-height: 22px;
+        color: $black-color;
+        .ant-radio-checked .ant-radio-inner::after {
+          background: $check-color;
+          box-shadow: none;
+        }
+        .ant-radio-checked .ant-radio-inner:focus {
+          box-shadow: none;
+        }
+      }
+      .ant-radio-inner {
+        background: $white-color;
+        border-color: none;
+        // border-color: $check-color;
+      }
+      .ant-checkbox-wrapper {
+        display: flex;
+        align-items: baseline;
+        @include fontSize(6);
+        line-height: 1.5;
+        color: $black-color;
+        .ant-checkbox-checked .ant-checkbox-inner::after {
+        }
+        .ant-checkbox-checked .ant-checkbox-inner {
+          background: $check-color;
+          border: none;
+        }
+        .ant-checkbox-inner {
+          background: $white-color;
+          border: 1px solid #afb2d3;
+        }
+      }
+    }
+  }
+}
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sampleClass {
+  padding: 15px 20px;
+  column-gap: 25px;
+}
+.loader_mcq {
+  display: none !important;
+}
+.check_span :global {
+  .ant-checkbox {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Group Testing Match snapshot button component 1`] = `
+<DocumentFragment>
+  <div
+    class="btnGrp footer_btn_div"
+  >
+    <button
+      class="ant-btn ant-btn-submit btn Clear"
+      data-testid="button-up-Clear"
+      disabled=""
+      type="button"
+    >
+      <img
+        alt="beforeIcon"
+        src="beforeIcon"
+      />
+      <span>
+        Clear
+      </span>
+      <img
+        alt="afterIcon"
+        src="afterIcon"
+      />
+    </button>
+  </div>
+</DocumentFragment>
+`;

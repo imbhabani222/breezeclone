@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Single Choice MCQ",
+    "status": "CTK",
+    "problems": [
+      {
+        "id": 320621,
+        "name": "Dot product M.N",
+        "slug": "vny8x",
+        "problem_type": "MCQ",
+        "solution": null
+      },
+      {
+        "id": 320603,
+        "name": "Dot Product M",
+        "slug": "83p8o",
+        "problem_type": "MCQ",
+        "solution": null
+      },
+      {
+        "id": 320602,
+        "name": "Sum of the Squares",
+        "slug": "x0nry",
+        "problem_type": "MCQ",
+        "solution": null
+      },
+      {
+        "id": 320585,
+        "name": "Basic Implementations",
+        "slug": "5g43x",
+        "problem_type": "MCQ",
+        "solution": null
+      }
+    ]
+  },
+  {
+    "name": "Diff section no time",
+    "status": "PND",
+    "problems": [
+      {
+        "id": 115872,
+        "name": "Lifestyle",
+        "slug": "6on3b",
+        "problem_type": "FIB",
+        "solution": null
+      },
+      {
+        "id": 115874,
+        "name": "Sector",
+        "slug": "xe6n9",
+        "problem_type": "FIB",
+        "solution": null
+      }
+    ]
+  },
+  {
+    "name": "Apple 12",
+    "status": "PND",
+    "problems": [
+      {
+        "id": 322627,
+        "name": "oneeee",
+        "slug": "836gn",
+        "problem_type": "MCQ",
+        "solution": null
+      },
+      {
+        "id": 320584,
+        "name": "Collect WeakMap",
+        "slug": "q4dao",
+        "problem_type": "MCQ",
+        "solution": null
+      }
+    ]
+  }
+]

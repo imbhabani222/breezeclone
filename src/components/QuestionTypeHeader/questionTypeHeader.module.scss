@@ -1,0 +1,218 @@
+@import "../../commonStyles/color.module.scss";
+@import "../../commonStyles/button.module.scss";
+@import "../../commonStyles/font.module.scss";
+@import "../../commonStyles/media-queries.scss";
+.container {
+  height: 50px;
+  background: $coding-linenum-clr;
+  @include dFlex(center, space-between);
+  padding: 10px 10px 10px 30px;
+  @include respond(medium) {
+    // height: 120px;
+    // @include dFlex(flex-start, space-between);
+    // flex-direction: column;
+    // padding: 10px 0px 20px 15px;
+  }
+  // @include respond(medium) {
+  //   padding: 10px;
+  // }
+  @include respond(small) {
+    height: 100px;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .problemType {
+    @include dFlex(center, center);
+    margin: 12px 0;
+    @include respond(small) {
+      margin: 0px;
+    }
+  }
+  .heading {
+    @include dFlex(center, center);
+    img {
+      @include respond(small) {
+        display: none;
+      }
+    }
+    .qus_round {
+      display: none;
+      @include respond(small) {
+        display: block;
+      }
+    }
+    h4 {
+      padding: 0 10px;
+      margin-bottom: 0;
+      @include fontStyle(21px, 700, $question-header-heading);
+      @include respond(max_mid) {
+        @include fontStyle(19px, 700, $question-header-heading);
+      }
+      @include respond(small) {
+        padding: 0 23px;
+        @include fontStyle(15px, 700, $question-header-heading);
+      }
+    }
+  }
+  .langBtn {
+    button {
+      border-radius: 5px;
+      border: 1px solid $editor-dropdown;
+      background: $white-color;
+      height: 40px;
+      span:first-child {
+        padding-right: 90px;
+      }
+    }
+  }
+
+  .status {
+    @include dFlex(center, center);
+
+    @include respond(medium) {
+      // width: 100%;
+      justify-content: space-between;
+      // margin-top: 20px;
+    }
+    @include respond(small) {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 0;
+      padding: 5px 15px;
+      //box-shadow: 0px 1px 2px rgba(117, 117, 117, 0.25);
+    }
+    div:nth-child(2) {
+      background-color: $white-color !important;
+      span {
+        color: $invalid-btn-text !important;
+      }
+    }
+    .statusItemWhite :global {
+      background-color: $white-color;
+      @include dFlex(center, center);
+      margin: auto 8px;
+      border-radius: 16px;
+      padding: 2px 15px 2px 6px;
+      img {
+        margin-right: 7px;
+      }
+      .ant-typography {
+        @include fontStyle(14px, 700, $question-header-heading);
+        word-wrap: break-word;
+        @include respond(small) {
+          @include fontStyle(13px, 700, $question-header-heading);
+        }
+      }
+    }
+
+    .statusItem :global {
+      background-color: $status-btn-gray;
+      @include dFlex(center, center);
+      margin: auto 28px;
+      border-radius: 16px;
+      padding: 2px 15px 2px 6px;
+      img {
+        margin-right: 7px;
+      }
+      .ant-typography {
+        @include fontStyle(14px, 400, $question-header-heading);
+        color: $white-color;
+        word-wrap: break-word;
+        @include respond(small) {
+          @include fontStyle(13px, 400, $white-color);
+        }
+      }
+    }
+    .themeColor :global {
+      display: none;
+      margin-right: 20px;
+      img {
+        margin-left: 5px;
+      }
+      .ant-typography {
+        @include fontStyle(14px, 500, $change-theme-clr);
+        margin-left: 5px;
+        @include respond(small) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.hideSave {
+  display: none !important;
+}
+
+.changeTheme :global {
+  [ant-click-animating-without-extra-node="true"]::after {
+    display: none;
+  }
+  .ant-btn:hover,
+  .ant-btn:focus {
+    background-color: transparent !important;
+  }
+}
+
+.changeTheme button :global {
+  background-color: transparent;
+  color: $black-color;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4px;
+  img {
+    margin: 0 10px;
+  }
+}
+.selectDropdown :global {
+  // width: 170px;
+  // margin-right: 133px;
+  margin-right: -120px;
+  position: fixed;
+  left: 701px;
+
+  background: transparent;
+  border-color: transparent;
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+    .ant-select-selector {
+    border-color: transparent;
+    box-shadow: none;
+  }
+  .ant-select :global {
+    height: 40px;
+    padding: 3px;
+    width: 180px !important;
+    background: $white-color;
+    box-sizing: border-box;
+    border: 1px solid $editor-dropdown;
+    border-radius: 4px;
+    margin-left: 98px;
+  }
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border: 0;
+    border-color: transparent;
+    box-shadow: none;
+    // border-radius: 5px;
+  }
+}
+
+.dropDownContainer {
+  padding: 10px;
+  // .content {
+  //   padding-left: 10px;
+  // }
+  .menuItem {
+    display: flex;
+
+    .content {
+      margin-left: 19px;
+      margin-top: 11px;
+    }
+  }
+
+  .toggle {
+    margin-right: 15px;
+  }
+}

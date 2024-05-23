@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Group Testing Match snapshot QuestionTypeHeader component 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="problemType"
+    >
+      <div
+        class="heading"
+      >
+        <img
+          alt="Icon"
+          src="exclamation_circle_dark.svg"
+        />
+        <h4>
+          MCQ
+        </h4>
+      </div>
+    </div>
+    <div
+      class="status"
+    >
+      <div
+        class="statusItemWhite"
+      >
+        <img
+          alt="ICON"
+          src="mcqEdit.png"
+        />
+        <span
+          class="ant-typography"
+        />
+      </div>
+      <div
+        class="statusItemWhite"
+      >
+        <img
+          alt="ICON"
+          src="clock_save.svg"
+        />
+        <span
+          class="ant-typography"
+        >
+          Last save  3:19 pm
+        </span>
+      </div>
+      <div
+        class="themeColor"
+      >
+        <img
+          alt="ICON"
+          src="change-theme.svg"
+        />
+        <span
+          class="ant-typography"
+        >
+          Change Theme
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
